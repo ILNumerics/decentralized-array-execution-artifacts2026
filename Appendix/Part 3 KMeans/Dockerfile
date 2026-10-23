@@ -13,7 +13,7 @@ RUN dotnet restore Part3.csproj
 RUN dotnet publish Part3.csproj -c Release -o /Artefact3/ILNumerics/publish/Release/net8.0/ --no-restore 
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends gfortran python3 python3-dev python3-pip python3-venv build-essential git libgdiplus && \
+    apt-get install -y --no-install-recommends gfortran python3 python3-dev python3-pip python3-venv build-essential libgdiplus && \
     rm -rf /var/lib/apt/lists/*
 
 RUN python3 -m venv /opt/venv
@@ -24,7 +24,7 @@ RUN /opt/venv/bin/pip install --upgrade pip && \
 
 # viproc (array instruction level parallelism for unchanged NumPy programs, https://github.com/hokb/viproc):
 # built from source (C/C++ extension, CMake via scikit-build-core). Runs the same NumPy script as 'python -m viproc'.
-RUN /opt/venv/bin/pip install "viproc @ git+https://github.com/hokb/viproc"
+RUN /opt/venv/bin/pip install "viproc @ https://github.com/hokb/viproc/archive/refs/heads/main.zip"
 
 WORKDIR /Artefact3/FORTRAN
 RUN mkdir -p ./x64/Release && \

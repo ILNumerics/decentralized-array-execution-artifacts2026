@@ -77,6 +77,11 @@ unsafe void performMeasurements(string filename) {
     using (File.Create(filename)) { }
 
     ensureFORTRANLibsInWorkingDir();
+
+    // Python for the NumPy and the viproc measurement: the same interpreter (and NumPy) for both.
+    // viproc is installed from GitHub if it is missing (see ensureViproc).
+    var pythonExeName = ensureViproc(Environment.GetEnvironmentVariable("PART3_PYTHON")
+        ?? (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "python" : "/opt/venv/bin/python3"));
     
     Array<double> A = createData();
 
@@ -100,23 +105,15 @@ unsafe void performMeasurements(string filename) {
     cmdargs += r2aPQ(filename, true);                                 // filename to write measured times (out/ append)
 
     checkClasses.a = -1; checkIterations = -1;
-    var pythonExeName = Environment.GetEnvironmentVariable("PART3_PYTHON")
-        ?? (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "python" : "/opt/venv/bin/python3");
-
     measureCmd(2.0, A, pythonExeName, sourcefile + " " + cmdargs, checkClasses, out checkIterations);
     if ((bool)anyall(classes != checkClasses) || iterations != checkIterations) throw new ArgumentException("Measurement error: numpy noopt yields invalid values.");
 
     // measure viproc: the same, unchanged NumPy script, run by 'python -m viproc' (https://github.com/hokb/viproc).
     // viproc executes the NumPy program's array instructions in parallel where their data dependencies allow it.
-    // Skipped if viproc is not installed for this Python.
-    if (pythonModuleAvailable(pythonExeName, "viproc")) {
-        var viprocArgs = r2aPQ(OutputFolder, true) + $"50 4 {MeasureRepetitions} {MeasureTimeSpanSeconds} " + r2aPQ(filename, true);
-        checkClasses.a = -1; checkIterations = -1;
-        measureCmd(4.0, A, pythonExeName, "-m viproc " + sourcefile + " " + viprocArgs, checkClasses, out checkIterations);
-        if ((bool)anyall(classes != checkClasses) || iterations != checkIterations) throw new ArgumentException("Measurement error: viproc yields invalid values.");
-    } else {
-        Console.WriteLine($"viproc not found for '{pythonExeName}': skipping the viproc measurement.");
-    }
+    var viprocArgs = r2aPQ(OutputFolder, true) + $"50 4 {MeasureRepetitions} {MeasureTimeSpanSeconds} " + r2aPQ(filename, true);
+    checkClasses.a = -1; checkIterations = -1;
+    measureCmd(4.0, A, pythonExeName, "-m viproc " + sourcefile + " " + viprocArgs, checkClasses, out checkIterations);
+    if ((bool)anyall(classes != checkClasses) || iterations != checkIterations) throw new ArgumentException("Measurement error: viproc yields invalid values.");
 
     //// measure numpy opt (numba) --DISABLED, because too many issues for compiling with NUMBA
     //sourcefile = r2aPQ(@"..\..\..\..\numpy\Part3_opt\Part3_opt.py", true);  // scriptfile
@@ -158,14 +155,64 @@ void ensureFORTRANLibsInWorkingDir() {
     }
 }
 
-bool pythonModuleAvailable(string python, string module) {
+// Runs a command, its output goes to the console. Returns its exit code, or -1 if it could not be started.
+int runProcess(string cmd, string args) {
     try {
-        var proc = Process.Start(python, $"-c \"import {module}\"");
+        using var proc = Process.Start(new ProcessStartInfo(cmd, args) { UseShellExecute = false });
         proc.WaitForExit();
-        return proc.ExitCode == 0;
-    } catch {
-        return false;
+        return proc.ExitCode;
+    } catch (Exception exc) {
+        Console.WriteLine($"Could not start '{cmd}': {exc.Message}");
+        return -1;
     }
+}
+
+bool pythonModuleAvailable(string python, string module) {
+    return runProcess(python, $"-c \"import {module}\"") == 0;
+}
+
+// Returns a Python executable that can import viproc. If 'python' cannot, viproc is installed from GitHub:
+// first into 'python' itself (pip is bootstrapped with ensurepip if missing); if that is not possible
+// (externally managed system Python, no write access, ...), into a dedicated virtual environment
+// next to the results, created from 'python'. viproc is built from source (C/C++ extension): this needs
+// a C/C++ compiler and the Python headers; CMake and Ninja come from PyPI. VIPROC_PIP_SPEC overrides
+// what is installed (e.g. a local checkout or a fixed commit). Ends the program with a message if
+// all attempts fail: a plot without viproc would be incomplete.
+string ensureViproc(string python) {
+    if (pythonModuleAvailable(python, "viproc")) return python;
+
+    var spec = Environment.GetEnvironmentVariable("VIPROC_PIP_SPEC")
+        ?? "viproc @ https://github.com/hokb/viproc/archive/refs/heads/main.zip";  // no git needed
+    Console.WriteLine($"viproc not found for '{python}'. Installing: {spec}");
+
+    if (runProcess(python, "-c \"import sys; sys.exit(sys.version_info < (3, 12))\"") != 0) {
+        Console.WriteLine($"viproc requires Python >= 3.12; '{python}' is older or could not be started. Set PART3_PYTHON to a Python >= 3.12.");
+        Environment.Exit(2);
+    }
+
+    // 1) into the given Python
+    if (!pythonModuleAvailable(python, "pip")) runProcess(python, "-m ensurepip --upgrade");
+    if (runProcess(python, $"-m pip install \"{spec}\"") == 0 && pythonModuleAvailable(python, "viproc")) return python;
+
+    // 2) into a dedicated virtual environment (its NumPy is then used for the NumPy measurement as well)
+    var venvDir = Path.GetFullPath(Path.Combine(OutputFolder, "..", ".viproc-venv"));
+    var venvPython = RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
+        ? Path.Combine(venvDir, "Scripts", "python.exe") : Path.Combine(venvDir, "bin", "python3");
+    Console.WriteLine($"Installing viproc into '{python}' failed. Trying a virtual environment: {venvDir}");
+    if ((File.Exists(venvPython) || runProcess(python, $"-m venv \"{venvDir}\"") == 0)
+        && (pythonModuleAvailable(venvPython, "pip") || runProcess(venvPython, "-m ensurepip --upgrade") == 0)
+        && (runProcess(venvPython, "-m pip install --upgrade pip") is var _)   // optional: an old pip may still work
+        && runProcess(venvPython, $"-m pip install \"{spec}\"") == 0
+        && pythonModuleAvailable(venvPython, "viproc")) {
+        return venvPython;
+    }
+
+    Console.WriteLine("Could not install viproc. It is built from source and needs: Python >= 3.12 with its headers "
+        + "(Debian/Ubuntu: python3-dev, python3-venv), a C/C++ compiler (build-essential / Visual Studio Build Tools) "
+        + "and internet access to GitHub and PyPI. Install it manually ('pip install \"" + spec + "\"') "
+        + "or set PART3_PYTHON to a Python that has it.");
+    Environment.Exit(2);
+    return null;
 }
 
 string r2aPQ(string rel, bool quote = false) {
@@ -242,7 +289,7 @@ void draw() {
         }
     };
     var pc = scene.First<PlotCube>();
-    if ((bool)any(times[full, 0] == 4)) {   // viproc line, if it was measured
+    if ((bool)any(times[full, 0] == 4)) {   // viproc line (absent in measurements made before it was added)
         pc.Add(new LinePlot(tosingle(times[times[full, 0] == 4, "1,2"]).T, tag: "numpy + viproc ", lineWidth: 3, markerStyle: MarkerStyle.Diamond, lineColor: Color.DarkOrange, lineStyle: DashStyle.Solid));
     }
 
