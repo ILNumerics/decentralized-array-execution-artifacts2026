@@ -1,6 +1,6 @@
 # Build stage
 # Ubuntu 24.04 based SDK image: viproc needs Python >= 3.12 (Debian 12 ships 3.11)
-FROM mcr.microsoft.com/dotnet/sdk:8.0-noble
+FROM mcr.microsoft.com/dotnet/sdk:10.0-noble
 WORKDIR /Artefact3
 COPY FORTRAN/*.* ./FORTRAN/
 
@@ -10,7 +10,7 @@ COPY ILNumerics/*.* ./ILNumerics/
 WORKDIR /Artefact3/ILNumerics
 
 RUN dotnet restore Part3.csproj
-RUN dotnet publish Part3.csproj -c Release -o /Artefact3/ILNumerics/publish/Release/net8.0/ --no-restore 
+RUN dotnet publish Part3.csproj -c Release -o /Artefact3/ILNumerics/publish/Release/net10.0/ --no-restore 
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends gfortran python3 python3-dev python3-pip python3-venv build-essential libgdiplus && \
@@ -32,6 +32,6 @@ RUN mkdir -p ./x64/Release && \
     csv_reader.f90 Part3_KMeans.f90 \
     -o ./x64/Release/Part3_KMeans.so
 
-WORKDIR /Artefact3/ILNumerics/publish/Release/net8.0/
+WORKDIR /Artefact3/ILNumerics/publish/Release/net10.0/
 
 ENTRYPOINT ["dotnet", "Part3.dll"]

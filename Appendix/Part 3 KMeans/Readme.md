@@ -32,7 +32,7 @@ Navigate into directory: `Appendix/Part 3 KMeans`.
 
 This will: 
 * build a debian based docker image, 
-* install the .NET 8.0 SDK, 
+* install the .NET 10.0 SDK, 
 * copy FORTRAN, NumPy and ILNumerics benchmark sources, 
 * compile FORTRAN binaries (optimized, using gfortran)
 * compile the ILNumerics assembly using ILNumerics Accelerator
@@ -75,15 +75,15 @@ Re-Running the project will only re-create the plot. To trigger a new *measureme
 
 `Part3.cs` measures it as measurement ID 4 (orange line, "numpy + viproc"), with the same Python and NumPy as the NumPy measurement. The Docker image installs viproc when it is built. When running from code, `Part3.cs` installs it from GitHub before the first measurement if the Python cannot import it: into that Python with pip, or, where that is not possible (an externally managed system Python, no write access), into a virtual environment `.viproc-venv` next to `result`, whose Python then runs both the NumPy and the viproc measurement. viproc is built from source and needs Python >= 3.12 with its headers (Debian/Ubuntu: `python3-dev`, `python3-venv`), a C/C++ compiler and internet access; NumPy >= 2.5 is installed with it. If the installation fails, the program stops with a message before measuring. Environment variables: `PART3_PYTHON` selects the Python executable, `VIPROC_PIP_SPEC` what pip installs (default: the `main` branch of https://github.com/hokb/viproc).
 
-Measurement with viproc, `result_archive_viproc/` (Ubuntu 24.04 VM, Intel Xeon @ 2.80 GHz, 4 cores, 10 GB RAM; Python 3.12, NumPy 2.5.4, viproc installed by `Part3.cs` into `.viproc-venv`; run from code, not in Docker; 2 s warm-up, 20 s measurement per technology), median time per k-means run (5 iterations), each sample averaged over 3 runs:
+Measurement with viproc, `result_archive_viproc/` (Ubuntu 24.04 VM, Intel Xeon @ 2.80 GHz, 4 cores, 10 GB RAM; Python 3.12, NumPy 2.5.4, .NET 10.0, viproc installed by `Part3.cs` into `.viproc-venv`; run from code, not in Docker; 2 s warm-up, 20 s measurement per technology), median time per k-means run (5 iterations), each sample averaged over 3 runs:
 
 | technology | median [ms] | min [ms] |
 |---|---:|---:|
-| NumPy | 3668 | 3573 |
-| ILNumerics, no Accelerator | 2110 | 2004 |
-| FORTRAN /O3 | 789 | 743 |
-| numpy + viproc | 511 | 457 |
-| ILNumerics Accelerator | 250 | 223 |
+| NumPy | 4514 | 4514 |
+| ILNumerics, no Accelerator | 3400 | 2473 |
+| FORTRAN /O3 | 779 | 728 |
+| numpy + viproc | 514 | 466 |
+| ILNumerics Accelerator | 323 | 261 |
 
 ![Part3 with viproc](result_archive_viproc/Part3.svg)
 
@@ -91,7 +91,7 @@ Notes on this run:
 * The NumPy time on this VM is dominated by page faults: each temporary of `X[:,i,newaxis] - centers` (481 KB) is `mmap`ed and unmapped by glibc's allocator, and page faults are expensive in this virtual machine (with `MALLOC_MMAP_THRESHOLD_=100000000` one distance step takes 220 instead of 610 µs). viproc reuses element memory from its own pool and avoids them. Compare viproc rather with FORTRAN and ILNumerics here, or rerun on hardware with cheaper page faults (the Windows i7-12700K measurement in `result_archive/`: NumPy 599 ms).
 * ILNumerics ran under its 'Starter' plan conditions (no license embedded in this build).
 * 4 cores only; the Accelerator results in `result_archive/` were measured on 12 cores.
-* The VM varies between runs: an earlier run on the same VM gave medians of NumPy 4720, ILNumerics no Accelerator 2529, FORTRAN 769, numpy + viproc 545 and ILNumerics Accelerator 471 ms.
+* The VM varies between runs: earlier runs on the same VM (.NET 8.0) gave medians of NumPy 3668 and 4720, ILNumerics no Accelerator 2110 and 2529, FORTRAN 789 and 769, numpy + viproc 511 and 545, ILNumerics Accelerator 250 and 471 ms.
 * The ILNumerics Accelerator needs longer than the 2 s warm-up to reach its steady speed here (its first samples, until ~7 s, are slower); the medians above include them.
 
 ## Discussion

@@ -21,7 +21,7 @@ using static ILNumerics.ILMath;
 //ILN(enabled=false)
 
 var exeDir = Path.GetDirectoryName(typeof(Part3_noopt).Assembly.Location);
-string OutputFolder = Path.GetFullPath(Path.Combine(exeDir, "..", "..", "..", "..", "result"));  // expected standard output file structure: ILNumerics/bin/Release/net8.0/Part3.dll
+string OutputFolder = Path.GetFullPath(Path.Combine(exeDir, "..", "..", "..", "..", "result"));  // expected standard output file structure: ILNumerics/bin/Release/net10.0/Part3.dll
 const int MeasureTimeSpanSeconds = 20;
 const int WarmupSeconds = 2;  // each technology runs this long before its measurement starts (JIT, caches, pools)
 const int MeasureRepetitions = 3;
