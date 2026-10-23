@@ -334,7 +334,12 @@ void draw() {
     \fontsize{{-3}}System: {getSystemInfo()}"));
     title.Location = new PointF(.13f, .46f);
     title.Anchor = new PointF(0, 0.5f);
-    pc.Limits.Update(new Vector3(0, 3.1f, 0), 2);
+    // y limits (log10 units): extend to the next decades below and above the data, so that the logarithmic
+    // axis has a labeled tick at each end and not only one label in the middle
+    var yLogMin = (float)Math.Floor(Math.Log10((double)minall(times[full, 2])));
+    var yLogMax = (float)Math.Ceiling(Math.Log10((double)maxall(times[full, 2])));
+    pc.Limits.Update(new Vector3(0, yLogMin, 0), 2);
+    pc.Limits.Update(new Vector3(0, yLogMax, 0), 2);
 
     var pbILabel = scene.First<Label>(predicate: l => l.Text.Length > 20);
     pbILabel.Position = new Vector3(0.9, 0.88, 0);
