@@ -7,6 +7,7 @@ when executed by:
 * NumPy, 
 * FORTRAN /O3 (all optimizations), with 
 * [ILNumerics Accelerator](https://ilnumerics.net/ilnumerics-accelerator-compiler.html).
+* NumPy + [viproc](https://github.com/hokb/viproc): the same, unchanged NumPy script, run by `python -m viproc` (added later, see [viproc](#viproc) below).
 
 This benchmark uses the iterative k-means clustering algorithm for demonstrating the ability of ILNumerics Accelerator to speed-up even such algorithms, which spend most of their calculation time inside *order dependent loops*. Where traditional parallelization fails ILNumerics Accelerator is able to turn fine grained parallel potential into speed-up, gained on multiple computing devices. Here, Array Instruction Level Parallelizm (AILP) accelerates the iterative algorithm beyond FORTRAN speed by a **factor of 3x**. The benchmark produces a plot, similar to the following: 
 ![Part3.svg](Part3.svg)  
@@ -62,11 +63,34 @@ dotnet run Part3.csproj -c Release
 The benchmark generates the following results and places them into a new folder: `\Appendix\Part 3 KMeans\result`.
 * classes.csv - cluster assignments (from last experiment)
 * input.csv   - common input data (for all experiments)
-* values.csv  - measurment values (times, ms; for all experiments). Source for plot generation. 
+* values.csv  - measurment values (times, ms; for all experiments). Source for plot generation. Measurement IDs: 0 ILNumerics, no Accelerator; 1 ILNumerics Accelerator; 2 NumPy; 3 FORTRAN; 4 numpy + viproc. 
 * Plots generated: Part3.bmp and Part3.svg
 
 * ## Repeating the experiment / Re-Run
 Re-Running the project will only re-create the plot. To trigger a new *measurement* just delete the `result` folder `Appendix\Part 3 KMeans\result\`.  
+
+## viproc
+
+[viproc](https://github.com/hokb/viproc) adds array instruction level parallelism to regular NumPy programs: it runs the unchanged NumPy script (`numpy/Part3_noopt/Part3_noopt.py`) with `python -m viproc`, issues its array instructions asynchronously and executes them in parallel where their data dependencies allow it, using NumPy's own kernels. Its results are bit-identical to NumPy; the benchmark checks the cluster assignments and the iteration count as for the other technologies.
+
+`Part3.cs` measures it as measurement ID 4 (orange line, "numpy + viproc") when `viproc` can be imported by the Python used for NumPy, and skips it otherwise. The Docker image installs it from source. When running from code, install it into that Python (`pip install "viproc @ git+https://github.com/hokb/viproc"`, Python >= 3.12, NumPy >= 2.5); the environment variable `PART3_PYTHON` selects another Python executable.
+
+Measurement with viproc, `result_archive_viproc/` (Ubuntu 24.04 VM, Intel Xeon @ 2.80 GHz, 4 cores, 10 GB RAM; Python 3.13, NumPy 2.5.3; run from code, not in Docker), median time per k-means run (5 iterations):
+
+| technology | median [ms] | min [ms] |
+|---|---:|---:|
+| NumPy | 4720 | 4534 |
+| ILNumerics, no Accelerator | 2529 | 2082 |
+| FORTRAN /O3 | 769 | 728 |
+| numpy + viproc | 545 | 494 |
+| ILNumerics Accelerator | 471 | 387 |
+
+![Part3 with viproc](result_archive_viproc/Part3.svg)
+
+Notes on this run:
+* The NumPy time on this VM is dominated by page faults: each temporary of `X[:,i,newaxis] - centers` (481 KB) is `mmap`ed and unmapped by glibc's allocator, and page faults are expensive in this virtual machine (with `MALLOC_MMAP_THRESHOLD_=100000000` one distance step takes 220 instead of 610 µs). viproc reuses element memory from its own pool and avoids them. Compare viproc rather with FORTRAN and ILNumerics here, or rerun on hardware with cheaper page faults (the Windows i7-12700K measurement in `result_archive/`: NumPy 599 ms).
+* ILNumerics ran under its 'Starter' plan conditions (no license embedded in this build).
+* 4 cores only; the Accelerator results in `result_archive/` were measured on 12 cores.
 
 ## Discussion
 ILNumerics Accelerator uses parallel potential on array instruction level and on sub-array instruction level (AILP). It enables to run multiple array instructions concurrently using multiple devices (as: individual cores of the CPU) and also to compress array instruction execution start times in the time domain by starting subsequent instructions as soon as the required *sub-part* of its input data is available. For example: the size of an input A is enough to start computing the size of the output of the function: `sin(A)`. 

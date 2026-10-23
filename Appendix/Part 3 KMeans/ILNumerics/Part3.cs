@@ -100,10 +100,23 @@ unsafe void performMeasurements(string filename) {
     cmdargs += r2aPQ(filename, true);                                 // filename to write measured times (out/ append)
 
     checkClasses.a = -1; checkIterations = -1;
-    var pythonExeName = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "python" : "/opt/venv/bin/python3";
+    var pythonExeName = Environment.GetEnvironmentVariable("PART3_PYTHON")
+        ?? (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "python" : "/opt/venv/bin/python3");
 
     measureCmd(2.0, A, pythonExeName, sourcefile + " " + cmdargs, checkClasses, out checkIterations);
     if ((bool)anyall(classes != checkClasses) || iterations != checkIterations) throw new ArgumentException("Measurement error: numpy noopt yields invalid values.");
+
+    // measure viproc: the same, unchanged NumPy script, run by 'python -m viproc' (https://github.com/hokb/viproc).
+    // viproc executes the NumPy program's array instructions in parallel where their data dependencies allow it.
+    // Skipped if viproc is not installed for this Python.
+    if (pythonModuleAvailable(pythonExeName, "viproc")) {
+        var viprocArgs = r2aPQ(OutputFolder, true) + $"50 4 {MeasureRepetitions} {MeasureTimeSpanSeconds} " + r2aPQ(filename, true);
+        checkClasses.a = -1; checkIterations = -1;
+        measureCmd(4.0, A, pythonExeName, "-m viproc " + sourcefile + " " + viprocArgs, checkClasses, out checkIterations);
+        if ((bool)anyall(classes != checkClasses) || iterations != checkIterations) throw new ArgumentException("Measurement error: viproc yields invalid values.");
+    } else {
+        Console.WriteLine($"viproc not found for '{pythonExeName}': skipping the viproc measurement.");
+    }
 
     //// measure numpy opt (numba) --DISABLED, because too many issues for compiling with NUMBA
     //sourcefile = r2aPQ(@"..\..\..\..\numpy\Part3_opt\Part3_opt.py", true);  // scriptfile
@@ -142,6 +155,16 @@ void ensureFORTRANLibsInWorkingDir() {
             File.Copy(file, dest, true);
             Console.WriteLine($"FORTRAN file copied: {file}"); 
         }
+    }
+}
+
+bool pythonModuleAvailable(string python, string module) {
+    try {
+        var proc = Process.Start(python, $"-c \"import {module}\"");
+        proc.WaitForExit();
+        return proc.ExitCode == 0;
+    } catch {
+        return false;
     }
 }
 
@@ -219,6 +242,9 @@ void draw() {
         }
     };
     var pc = scene.First<PlotCube>();
+    if ((bool)any(times[full, 0] == 4)) {   // viproc line, if it was measured
+        pc.Add(new LinePlot(tosingle(times[times[full, 0] == 4, "1,2"]).T, tag: "numpy + viproc ", lineWidth: 3, markerStyle: MarkerStyle.Diamond, lineColor: Color.DarkOrange, lineStyle: DashStyle.Solid));
+    }
 
     // set all fonts
     pc.Axes.XAxis.Label.Font = allLabelFonts;

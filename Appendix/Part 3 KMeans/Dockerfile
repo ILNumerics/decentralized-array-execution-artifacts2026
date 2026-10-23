@@ -1,5 +1,6 @@
 # Build stage
-FROM mcr.microsoft.com/dotnet/sdk:8.0  
+# Ubuntu 24.04 based SDK image: viproc needs Python >= 3.12 (Debian 12 ships 3.11)
+FROM mcr.microsoft.com/dotnet/sdk:8.0-noble
 WORKDIR /Artefact3
 COPY FORTRAN/*.* ./FORTRAN/
 
@@ -12,7 +13,7 @@ RUN dotnet restore Part3.csproj
 RUN dotnet publish Part3.csproj -c Release -o /Artefact3/ILNumerics/publish/Release/net8.0/ --no-restore 
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends gfortran python3 python3-pip python3-venv build-essential libgdiplus && \
+    apt-get install -y --no-install-recommends gfortran python3 python3-dev python3-pip python3-venv build-essential git libgdiplus && \
     rm -rf /var/lib/apt/lists/*
 
 RUN python3 -m venv /opt/venv
@@ -20,6 +21,10 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 RUN /opt/venv/bin/pip install --upgrade pip && \
     /opt/venv/bin/pip install numpy numba
+
+# viproc (array instruction level parallelism for unchanged NumPy programs, https://github.com/hokb/viproc):
+# built from source (C/C++ extension, CMake via scikit-build-core). Runs the same NumPy script as 'python -m viproc'.
+RUN /opt/venv/bin/pip install "viproc @ git+https://github.com/hokb/viproc"
 
 WORKDIR /Artefact3/FORTRAN
 RUN mkdir -p ./x64/Release && \
