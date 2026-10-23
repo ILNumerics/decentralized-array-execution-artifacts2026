@@ -1,0 +1,1249 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+ 
+<svg xmlns='http://www.w3.org/2000/svg'
+     xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events'
+     version='1.1' baseProfile='full'
+     width='1500' height='1000'>
+<rect x='0' y='0' width='1500' height='1000' fill='#FFFFFF'/> 
+
+
+<text x='1218.90' y='882.21' font-family='Verdana' font-size='8.00pt' fill='#B4B4B4'>powered by: 
+<tspan fill='#999900' x='1285.90px'>ILNumerics</tspan></text>
+<text x='317.48' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>5</text>
+<text x='317.48' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>5</text>
+<text x='317.48' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>5</text>
+<text x='318.48' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>5</text>
+<text x='318.48' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>5</text>
+<text x='319.48' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>5</text>
+<text x='319.48' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>5</text>
+<text x='319.48' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>5</text>
+<text x='318.48' y='928.39' font-family='Linux Libertine' font-size='13.00pt'>5</text>
+<text x='556.38' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10</text>
+<text x='556.38' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10</text>
+<text x='556.38' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10</text>
+<text x='557.38' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10</text>
+<text x='557.38' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10</text>
+<text x='558.38' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10</text>
+<text x='558.38' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10</text>
+<text x='558.38' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10</text>
+<text x='557.38' y='928.39' font-family='Linux Libertine' font-size='13.00pt'>10</text>
+<text x='798.78' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>15</text>
+<text x='798.78' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>15</text>
+<text x='798.78' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>15</text>
+<text x='799.78' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>15</text>
+<text x='799.78' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>15</text>
+<text x='800.78' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>15</text>
+<text x='800.78' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>15</text>
+<text x='800.78' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>15</text>
+<text x='799.78' y='928.39' font-family='Linux Libertine' font-size='13.00pt'>15</text>
+<text x='1039.17' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>20</text>
+<text x='1039.17' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>20</text>
+<text x='1039.17' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>20</text>
+<text x='1040.17' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>20</text>
+<text x='1040.17' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>20</text>
+<text x='1041.17' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>20</text>
+<text x='1041.17' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>20</text>
+<text x='1041.17' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>20</text>
+<text x='1040.17' y='928.39' font-family='Linux Libertine' font-size='13.00pt'>20</text>
+<text x='1281.57' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>25</text>
+<text x='1281.57' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>25</text>
+<text x='1281.57' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>25</text>
+<text x='1282.57' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>25</text>
+<text x='1282.57' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>25</text>
+<text x='1283.57' y='927.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>25</text>
+<text x='1283.57' y='928.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>25</text>
+<text x='1283.57' y='929.39' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>25</text>
+<text x='1282.57' y='928.39' font-family='Linux Libertine' font-size='13.00pt'>25</text>
+<text x='682.50' y='958.56' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>Elapsed time [s]</text>
+<text x='682.50' y='959.56' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>Elapsed time [s]</text>
+<text x='682.50' y='960.56' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>Elapsed time [s]</text>
+<text x='683.50' y='958.56' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>Elapsed time [s]</text>
+<text x='683.50' y='960.56' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>Elapsed time [s]</text>
+<text x='684.50' y='958.56' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>Elapsed time [s]</text>
+<text x='684.50' y='959.56' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>Elapsed time [s]</text>
+<text x='684.50' y='960.56' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>Elapsed time [s]</text>
+<text x='683.50' y='959.56' font-family='Linux Libertine' font-size='13.00pt'>Elapsed time [s]</text>
+<text x='32.81' y='906.51' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='903.51px' x='50.81px'>2</tspan></text>
+<text x='32.81' y='907.51' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='904.51px' x='50.81px'>2</tspan></text>
+<text x='32.81' y='908.51' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='905.51px' x='50.81px'>2</tspan></text>
+<text x='33.81' y='906.51' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='903.51px' x='51.81px'>2</tspan></text>
+<text x='33.81' y='908.51' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='905.51px' x='51.81px'>2</tspan></text>
+<text x='34.81' y='906.51' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='903.51px' x='52.81px'>2</tspan></text>
+<text x='34.81' y='907.51' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='904.51px' x='52.81px'>2</tspan></text>
+<text x='34.81' y='908.51' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='905.51px' x='52.81px'>2</tspan></text>
+<text x='33.81' y='907.51' font-family='Linux Libertine' font-size='13.00pt'>10
+<tspan font-size='9.10pt' y='904.51px' x='51.81px'>2</tspan></text>
+<text x='32.81' y='414.78' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='411.78px' x='50.81px'>3</tspan></text>
+<text x='32.81' y='415.78' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='412.78px' x='50.81px'>3</tspan></text>
+<text x='32.81' y='416.78' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='413.78px' x='50.81px'>3</tspan></text>
+<text x='33.81' y='414.78' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='411.78px' x='51.81px'>3</tspan></text>
+<text x='33.81' y='416.78' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='413.78px' x='51.81px'>3</tspan></text>
+<text x='34.81' y='414.78' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='411.78px' x='52.81px'>3</tspan></text>
+<text x='34.81' y='415.78' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='412.78px' x='52.81px'>3</tspan></text>
+<text x='34.81' y='416.78' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>10
+<tspan font-size='9.10pt' y='413.78px' x='52.81px'>3</tspan></text>
+<text x='33.81' y='415.78' font-family='Linux Libertine' font-size='13.00pt'>10
+<tspan font-size='9.10pt' y='412.78px' x='51.81px'>3</tspan></text>
+<text x='-42.79' y='493.53' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF' transform='rotate(-90.00 18.71 499.50)'>Exec time [ms]</text>
+<text x='-42.79' y='494.53' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF' transform='rotate(-90.00 18.71 499.50)'>Exec time [ms]</text>
+<text x='-42.79' y='495.53' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF' transform='rotate(-90.00 18.71 499.50)'>Exec time [ms]</text>
+<text x='-41.79' y='493.53' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF' transform='rotate(-90.00 18.71 499.50)'>Exec time [ms]</text>
+<text x='-41.79' y='495.53' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF' transform='rotate(-90.00 18.71 499.50)'>Exec time [ms]</text>
+<text x='-40.79' y='493.53' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF' transform='rotate(-90.00 18.71 499.50)'>Exec time [ms]</text>
+<text x='-40.79' y='494.53' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF' transform='rotate(-90.00 18.71 499.50)'>Exec time [ms]</text>
+<text x='-40.79' y='495.53' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF' transform='rotate(-90.00 18.71 499.50)'>Exec time [ms]</text>
+<text x='-41.79' y='494.53' font-family='Linux Libertine' font-size='13.00pt' transform='rotate(-90.00 18.71 499.50)'>Exec time [ms]</text>
+<line x1='97.00' y1='902.00' x2='97.00' y2='97.00'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='97.00' x2='1402.00' y2='97.00'  stroke='#A9A9A9'/>
+<line x1='1402.00' y1='97.00' x2='1402.00' y2='902.00'  stroke='#A9A9A9'/>
+<line x1='1402.00' y1='902.00' x2='97.00' y2='902.00'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='902.00' x2='1402.00' y2='902.00'  stroke='#A9A9A9'/>
+<line x1='324.48' y1='902.00' x2='324.48' y2='909.99'  stroke='#A9A9A9'/>
+<line x1='566.88' y1='902.00' x2='566.88' y2='909.99'  stroke='#A9A9A9'/>
+<line x1='809.28' y1='902.00' x2='809.28' y2='909.99'  stroke='#A9A9A9'/>
+<line x1='1051.67' y1='902.00' x2='1051.67' y2='909.99'  stroke='#A9A9A9'/>
+<line x1='1294.07' y1='902.00' x2='1294.07' y2='909.99'  stroke='#A9A9A9'/>
+<line x1='324.48' y1='902.00' x2='324.48' y2='97.00'  stroke-dasharray='2,2,2,2,2,2,2,2' stroke='#D3D3D3'/>
+<line x1='566.88' y1='902.00' x2='566.88' y2='97.00'  stroke-dasharray='2,2,2,2,2,2,2,2' stroke-dashoffset='805.0000' stroke='#D3D3D3'/>
+<line x1='809.28' y1='902.00' x2='809.28' y2='97.00'  stroke-dasharray='2,2,2,2,2,2,2,2' stroke-dashoffset='1610.0000' stroke='#D3D3D3'/>
+<line x1='1051.67' y1='902.00' x2='1051.67' y2='97.00'  stroke-dasharray='2,2,2,2,2,2,2,2' stroke-dashoffset='2415.0000' stroke='#D3D3D3'/>
+<line x1='1294.07' y1='902.00' x2='1294.07' y2='97.00'  stroke-dasharray='2,2,2,2,2,2,2,2' stroke-dashoffset='3220.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='902.00' x2='97.00' y2='97.00'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='902.00' x2='89.01' y2='902.00'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='753.97' x2='93.00' y2='753.97'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='667.38' x2='93.00' y2='667.38'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='605.94' x2='93.00' y2='605.94'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='558.29' x2='93.00' y2='558.29'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='519.35' x2='93.00' y2='519.35'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='486.43' x2='93.00' y2='486.43'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='457.92' x2='93.00' y2='457.92'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='432.76' x2='93.00' y2='432.76'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='410.26' x2='89.01' y2='410.26'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='262.23' x2='93.00' y2='262.23'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='175.64' x2='93.00' y2='175.64'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='114.21' x2='93.00' y2='114.21'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='902.00' x2='1402.00' y2='902.00'  stroke-dasharray='2,2,2,2,2,2,2,2' stroke='#D3D3D3'/>
+<line x1='97.00' y1='410.26' x2='1402.00' y2='410.26'  stroke-dasharray='2,2,2,2,2,2,2,2' stroke-dashoffset='1305.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='753.97' x2='1402.00' y2='753.97'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke='#D3D3D3'/>
+<line x1='97.00' y1='667.38' x2='1402.00' y2='667.38'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='1305.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='605.94' x2='1402.00' y2='605.94'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='2610.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='558.29' x2='1402.00' y2='558.29'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='3915.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='519.35' x2='1402.00' y2='519.35'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='5220.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='486.43' x2='1402.00' y2='486.43'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='6525.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='457.92' x2='1402.00' y2='457.92'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='7830.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='432.76' x2='1402.00' y2='432.76'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='9135.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='262.23' x2='1402.00' y2='262.23'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='10440.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='175.64' x2='1402.00' y2='175.64'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='11745.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='114.21' x2='1402.00' y2='114.21'  stroke-dasharray='3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112,3.3333335,1.1111112' stroke-dashoffset='13050.0000' stroke='#D3D3D3'/>
+<line x1='97.00' y1='902.00' x2='97.00' y2='902.00'  stroke='#A9A9A9'/>
+<line x1='1402.00' y1='902.00' x2='1402.00' y2='902.00'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='97.00' x2='97.00' y2='97.00'  stroke='#A9A9A9'/>
+<line x1='1402.00' y1='97.00' x2='1402.00' y2='97.00'  stroke='#A9A9A9'/>
+<line x1='629.51' y1='127.19' x2='1149.14' y2='138.33'  stroke='#008000' stroke-width='3'/>
+<line x1='743.44' y1='251.44' x2='1051.16' y2='250.23'  stroke-dasharray='2,2,2,2' stroke-dashoffset='307.8056' stroke='#000000' stroke-width='3'/>
+<line x1='1051.16' y1='250.23' x2='1342.68' y2='261.81'  stroke-dasharray='2,2,2,2' stroke-dashoffset='615.5281' stroke='#000000' stroke-width='3'/>
+<line x1='437.29' y1='219.59' x2='743.44' y2='251.44'  stroke-dasharray='2,2,2,2' stroke='#000000' stroke-width='3'/>
+<line x1='927.70' y1='690.15' x2='964.71' y2='702.65'  stroke='#FF0000' stroke-width='3'/>
+<line x1='964.71' y1='702.65' x2='997.14' y2='731.04'  stroke='#FF0000' stroke-width='3'/>
+<line x1='997.14' y1='731.04' x2='1030.12' y2='727.56'  stroke='#FF0000' stroke-width='3'/>
+<line x1='1030.12' y1='727.56' x2='1063.96' y2='721.97'  stroke='#FF0000' stroke-width='3'/>
+<line x1='888.44' y1='708.03' x2='927.70' y2='690.15'  stroke='#FF0000' stroke-width='3'/>
+<line x1='542.97' y1='714.44' x2='577.81' y2='715.63'  stroke='#FF0000' stroke-width='3'/>
+<line x1='369.26' y1='264.99' x2='406.53' y2='462.35'  stroke='#FF0000' stroke-width='3'/>
+<line x1='537.79' y1='465.89' x2='653.08' y2='459.97'  stroke='#0000FF' stroke-width='3'/>
+<line x1='653.08' y1='459.97' x2='778.46' y2='442.06'  stroke='#0000FF' stroke-width='3'/>
+<line x1='1007.30' y1='473.70' x2='1122.14' y2='460.78'  stroke='#0000FF' stroke-width='3'/>
+<line x1='899.20' y1='450.05' x2='1007.30' y2='473.70'  stroke='#0000FF' stroke-width='3'/>
+<line x1='778.46' y1='442.06' x2='899.20' y2='450.05'  stroke='#0000FF' stroke-width='3'/>
+<line x1='425.65' y1='462.87' x2='537.79' y2='465.89'  stroke='#0000FF' stroke-width='3'/>
+<line x1='971.95' y1='577.75' x2='1055.24' y2='529.29'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='905.56' y1='553.53' x2='971.95' y2='577.75'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='196.80' y1='460.96' x2='311.95' y2='460.24'  stroke='#0000FF' stroke-width='3'/>
+<line x1='406.53' y1='462.35' x2='406.55' y2='462.43'  stroke='#FF0000' stroke-width='3'/>
+<line x1='311.95' y1='460.24' x2='425.65' y2='462.87'  stroke='#0000FF' stroke-width='3'/>
+<line x1='156.32' y1='553.89' x2='227.64' y2='562.45'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='227.64' y1='562.45' x2='306.55' y2='540.83'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='306.55' y1='540.83' x2='382.14' y2='550.04'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='382.14' y1='550.04' x2='423.31' y2='551.21'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='431.17' y1='592.83' x2='406.55' y2='462.43'  stroke='#FF0000' stroke-width='3'/>
+<line x1='431.17' y1='592.83' x2='468.27' y2='702.09'  stroke='#FF0000' stroke-width='3'/>
+<line x1='468.27' y1='702.09' x2='507.92' y2='688.04'  stroke='#FF0000' stroke-width='3'/>
+<line x1='507.92' y1='688.04' x2='542.97' y2='714.44'  stroke='#FF0000' stroke-width='3'/>
+<line x1='852.34' y1='684.67' x2='888.44' y2='708.03'  stroke='#FF0000' stroke-width='3'/>
+<line x1='812.06' y1='706.03' x2='852.34' y2='684.67'  stroke='#FF0000' stroke-width='3'/>
+<line x1='577.81' y1='715.63' x2='612.81' y2='714.74'  stroke='#FF0000' stroke-width='3'/>
+<line x1='775.63' y1='673.64' x2='812.06' y2='706.03'  stroke='#FF0000' stroke-width='3'/>
+<line x1='733.23' y1='644.88' x2='775.63' y2='673.64'  stroke='#FF0000' stroke-width='3'/>
+<line x1='684.70' y1='707.17' x2='733.23' y2='644.88'  stroke='#FF0000' stroke-width='3'/>
+<line x1='648.46' y1='710.63' x2='684.70' y2='707.17'  stroke='#FF0000' stroke-width='3'/>
+<line x1='612.81' y1='714.74' x2='648.46' y2='710.63'  stroke='#FF0000' stroke-width='3'/>
+<line x1='456.98' y1='552.17' x2='423.31' y2='551.21'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='535.89' y1='540.84' x2='609.79' y2='554.87'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='609.79' y1='554.87' x2='682.65' y2='557.90'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='682.65' y1='557.90' x2='754.75' y2='560.12'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='831.20' y1='547.62' x2='905.56' y2='553.53'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='754.75' y1='560.12' x2='831.20' y2='547.62'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='456.98' y1='552.17' x2='535.89' y2='540.84'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='97.00' y1='902.00' x2='97.00' y2='97.00'  stroke='#A9A9A9'/>
+<line x1='97.00' y1='97.00' x2='1402.00' y2='97.00'  stroke='#A9A9A9'/>
+<line x1='1402.00' y1='97.00' x2='1402.00' y2='902.00'  stroke='#A9A9A9'/>
+<line x1='1402.00' y1='902.00' x2='97.00' y2='902.00'  stroke='#A9A9A9'/>
+<polygon fill='#A9A9A9' points='437.18 220.08 437.11 212.63 440.48 213.40' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='436.98 219.98 440.15 213.24 442.85 215.39' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='436.84 219.81 442.62 215.11 444.12 218.22' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='436.79 219.59 444.04 217.86 444.04 221.32' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='436.84 219.38 444.12 220.96 442.62 224.08' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='436.98 219.20 442.85 223.79 440.15 225.95' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='437.18 219.10 440.48 225.79 437.11 226.56' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='437.40 219.10 437.47 226.56 434.10 225.79' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='437.60 219.20 434.43 225.95 431.73 223.79' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='437.74 219.38 431.96 224.08 430.46 220.96' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='437.79 219.59 430.54 221.32 430.54 217.86' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='437.74 219.81 430.46 218.22 431.96 215.11' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='437.60 219.98 431.73 215.39 434.43 213.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='437.40 220.08 434.10 213.40 437.47 212.63' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.33 251.93 743.26 244.48 746.63 245.25' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.13 251.83 746.30 245.09 749.00 247.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='742.99 251.66 748.77 246.95 750.27 250.07' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='742.94 251.44 750.19 249.71 750.19 253.17' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='742.99 251.22 750.27 252.81 748.77 255.93' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.13 251.05 749.00 255.64 746.30 257.80' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.33 250.95 746.63 257.64 743.26 258.41' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.55 250.95 743.63 258.41 740.26 257.64' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.76 251.05 740.59 257.80 737.88 255.64' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.89 251.22 738.11 255.93 736.61 252.81' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.94 251.44 736.69 253.17 736.69 249.71' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.89 251.66 736.61 250.07 738.11 246.95' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.76 251.83 737.88 247.24 740.59 245.09' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='743.55 251.93 740.26 245.25 743.63 244.48' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1051.05 250.71 1050.98 243.26 1054.35 244.03' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1050.85 250.62 1054.02 243.87 1056.72 246.03' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1050.71 250.44 1056.49 245.74 1057.99 248.86' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1050.66 250.23 1057.91 248.50 1057.91 251.96' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1050.71 250.01 1057.99 251.60 1056.49 254.71' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1050.85 249.84 1056.72 254.43 1054.02 256.58' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1051.05 249.74 1054.35 256.42 1050.98 257.19' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1051.27 249.74 1051.35 257.19 1047.98 256.42' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1051.48 249.84 1048.31 256.58 1045.60 254.43' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1051.61 250.01 1045.83 254.71 1044.33 251.60' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1051.66 250.23 1044.41 251.96 1044.41 248.50' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1051.61 250.44 1044.33 248.86 1045.83 245.74' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1051.48 250.62 1045.60 246.03 1048.31 243.87' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1051.27 250.71 1047.98 244.03 1051.35 243.26' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.57 262.29 1342.50 254.84 1345.87 255.61' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.37 262.20 1345.54 255.45 1348.24 257.61' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.23 262.02 1348.01 257.32 1349.51 260.44' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.18 261.81 1349.43 260.08 1349.43 263.54' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.23 261.59 1349.51 263.18 1348.01 266.29' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.37 261.42 1348.24 266.01 1345.54 268.16' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.57 261.32 1345.87 268.00 1342.50 268.77' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.79 261.32 1342.87 268.77 1339.49 268.00' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.99 261.42 1339.83 268.16 1337.12 266.01' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1343.13 261.59 1337.35 266.29 1335.85 263.18' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1343.18 261.81 1335.93 263.54 1335.93 260.08' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1343.13 262.02 1335.85 260.44 1337.35 257.32' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.99 262.20 1337.12 257.61 1339.83 255.45' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1342.79 262.29 1339.49 255.61 1342.87 254.84' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='629.51 120.19 634.45 132.06 624.58 132.06' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='629.70 120.23 624.77 132.20 629.70 120.23' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1149.14 131.33 1154.08 143.19 1144.20 143.19' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1149.33 131.36 1144.40 143.34 1149.33 131.36' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='203.52 454.02 203.65 467.82 189.85 467.69' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='203.75 454.24 190.08 467.91 189.95 454.11' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='203.80 454.46 189.80 454.46 203.80 454.46' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='318.67 453.29 318.80 467.10 305.00 466.97' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='318.89 453.52 305.22 467.19 305.09 453.39' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='318.95 453.74 304.95 453.74 318.95 453.74' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='432.38 455.92 432.51 469.72 418.71 469.59' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='432.60 456.14 418.93 469.81 418.80 456.01' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='432.65 456.37 418.65 456.37 432.65 456.37' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='544.52 458.95 544.65 472.75 530.85 472.62' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='544.74 459.17 531.07 472.84 530.94 459.04' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='544.79 459.39 530.79 459.39 544.79 459.39' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='659.80 453.03 659.93 466.83 646.13 466.70' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='660.03 453.25 646.36 466.92 646.23 453.12' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='660.08 453.47 646.08 453.47 660.08 453.47' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='785.19 435.11 785.32 448.91 771.51 448.78' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='785.41 435.33 771.74 449.00 771.61 435.20' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='785.46 435.56 771.46 435.56 785.46 435.56' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='905.92 443.11 906.05 456.91 892.25 456.78' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='906.14 443.33 892.47 457.00 892.34 443.20' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='906.20 443.55 892.20 443.55 906.20 443.55' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1014.02 466.75 1014.15 480.55 1000.35 480.42' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1014.24 466.98 1000.57 480.65 1000.44 466.85' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1014.30 467.20 1000.30 467.20 1014.30 467.20' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1128.86 453.84 1128.99 467.64 1115.19 467.51' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1129.09 454.06 1115.42 467.73 1115.29 453.93' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1129.14 454.28 1115.14 454.28 1129.14 454.28' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='369.15 265.48 369.07 258.03 372.45 258.80' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='368.95 265.38 372.11 258.64 374.82 260.79' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='368.81 265.21 374.59 260.51 376.09 263.62' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='368.76 264.99 376.01 263.26 376.01 266.72' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='368.81 264.77 376.09 266.36 374.59 269.48' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='368.95 264.60 374.82 269.19 372.11 271.35' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='369.15 264.50 372.45 271.19 369.07 271.96' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='369.37 264.50 369.44 271.96 366.07 271.19' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='369.57 264.60 366.40 271.35 363.70 269.19' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='369.71 264.77 363.93 269.48 362.43 266.36' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='369.76 264.99 362.51 266.72 362.51 263.26' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='369.71 265.21 362.43 263.62 363.93 260.51' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='369.57 265.38 363.70 260.79 366.40 258.64' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='369.37 265.48 366.07 258.80 369.44 258.03' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='431.06 593.32 430.99 585.86 434.36 586.63' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='430.86 593.22 434.03 586.47 436.73 588.63' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='430.72 593.05 436.50 588.34 438.00 591.46' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='430.67 592.83 437.92 591.10 437.92 594.56' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='430.72 592.61 438.00 594.20 436.50 597.32' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='430.86 592.44 436.73 597.03 434.03 599.18' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='431.06 592.34 434.36 599.03 430.99 599.79' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='431.28 592.34 431.36 599.79 427.99 599.03' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='431.49 592.44 428.32 599.18 425.61 597.03' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='431.62 592.61 425.84 597.32 424.34 594.20' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='431.67 592.83 424.42 594.56 424.42 591.10' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='431.62 593.05 424.34 591.46 425.84 588.34' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='431.49 593.22 425.61 588.63 428.32 586.47' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='431.28 593.32 427.99 586.63 431.36 585.86' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='468.16 702.58 468.09 695.12 471.46 695.89' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='467.96 702.48 471.13 695.73 473.83 697.89' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='467.82 702.31 473.60 697.60 475.10 700.72' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='467.77 702.09 475.02 700.36 475.02 703.82' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='467.82 701.87 475.10 703.46 473.60 706.57' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='467.96 701.70 473.83 706.29 471.13 708.44' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='468.16 701.60 471.46 708.28 468.09 709.05' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='468.38 701.60 468.45 709.05 465.08 708.28' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='468.58 701.70 465.41 708.44 462.71 706.29' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='468.72 701.87 462.94 706.57 461.44 703.46' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='468.77 702.09 461.52 703.82 461.52 700.36' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='468.72 702.31 461.44 700.72 462.94 697.60' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='468.58 702.48 462.71 697.89 465.41 695.73' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='468.38 702.58 465.08 695.89 468.45 695.12' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='507.81 688.53 507.74 681.08 511.11 681.85' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='507.61 688.44 510.78 681.69 513.48 683.85' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='507.47 688.26 513.25 683.56 514.75 686.67' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='507.42 688.04 514.67 686.32 514.67 689.77' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='507.47 687.83 514.75 689.41 513.25 692.53' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='507.61 687.65 513.48 692.24 510.78 694.40' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='507.81 687.56 511.11 694.24 507.74 695.01' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='508.03 687.56 508.11 695.01 504.73 694.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='508.23 687.65 505.07 694.40 502.36 692.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='508.37 687.83 502.59 692.53 501.09 689.42' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='508.42 688.04 501.17 689.77 501.17 686.32' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='508.37 688.26 501.09 686.67 502.59 683.56' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='508.23 688.44 502.36 683.85 505.07 681.69' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='508.03 688.53 504.73 681.85 508.11 681.08' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='542.86 714.93 542.79 707.48 546.16 708.25' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='542.66 714.83 545.83 708.09 548.53 710.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='542.52 714.66 548.30 709.96 549.80 713.07' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='542.47 714.44 549.72 712.71 549.72 716.17' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='542.52 714.23 549.80 715.81 548.30 718.93' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='542.66 714.05 548.53 718.64 545.83 720.80' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='542.86 713.96 546.16 720.64 542.79 721.41' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='543.08 713.96 543.15 721.41 539.78 720.64' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='543.28 714.05 540.11 720.80 537.41 718.64' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='543.42 714.23 537.64 718.93 536.14 715.81' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='543.47 714.44 536.22 716.17 536.22 712.71' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='543.42 714.66 536.14 713.07 537.64 709.96' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='543.28 714.83 537.41 710.24 540.11 708.09' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='543.08 714.93 539.78 708.25 543.15 707.48' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='577.70 716.12 577.63 708.66 581.00 709.43' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='577.50 716.02 580.67 709.27 583.37 711.43' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='577.36 715.85 583.14 711.14 584.64 714.26' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='577.31 715.63 584.56 713.90 584.56 717.36' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='577.36 715.41 584.64 717.00 583.14 720.12' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='577.50 715.24 583.37 719.83 580.67 721.98' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='577.70 715.14 581.00 721.83 577.63 722.59' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='577.92 715.14 578.00 722.59 574.62 721.83' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='578.12 715.24 574.95 721.98 572.25 719.83' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='578.26 715.41 572.48 720.12 570.98 717.00' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='578.31 715.63 571.06 717.36 571.06 713.90' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='578.26 715.85 570.98 714.26 572.48 711.14' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='578.12 716.02 572.25 711.43 574.95 709.27' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='577.92 716.12 574.62 709.43 578.00 708.66' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='612.70 715.23 612.63 707.77 616.00 708.54' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='612.50 715.13 615.67 708.38 618.37 710.54' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='612.36 714.96 618.15 710.25 619.65 713.37' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='612.31 714.74 619.56 713.01 619.56 716.47' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='612.36 714.52 619.65 716.11 618.15 719.23' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='612.50 714.35 618.37 718.94 615.67 721.09' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='612.70 714.25 616.00 720.93 612.63 721.70' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='612.93 714.25 613.00 721.70 609.63 720.93' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='613.13 714.35 609.96 721.09 607.25 718.94' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='613.27 714.52 607.48 719.23 605.98 716.11' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='613.31 714.74 606.07 716.47 606.07 713.01' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='613.27 714.96 605.98 713.37 607.48 710.25' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='613.13 715.13 607.25 710.54 609.96 708.38' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='612.93 715.23 609.63 708.54 613.00 707.77' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.35 711.12 648.28 703.67 651.65 704.44' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.15 711.02 651.32 704.28 654.02 706.43' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.01 710.85 653.79 706.15 655.29 709.26' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='647.96 710.63 655.21 708.90 655.21 712.36' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.01 710.42 655.29 712.00 653.79 715.12' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.15 710.24 654.02 714.83 651.32 716.99' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.35 710.14 651.65 716.83 648.28 717.60' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.57 710.14 648.64 717.60 645.27 716.83' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.77 710.24 645.60 716.99 642.90 714.83' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.91 710.42 643.13 715.12 641.63 712.00' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.96 710.63 641.71 712.36 641.71 708.90' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.91 710.85 641.63 709.26 643.13 706.15' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.77 711.02 642.90 706.43 645.60 704.28' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='648.57 711.12 645.27 704.44 648.64 703.67' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='684.59 707.66 684.52 700.21 687.89 700.98' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='684.39 707.56 687.56 700.82 690.26 702.97' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='684.25 707.39 690.04 702.69 691.54 705.80' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='684.20 707.17 691.45 705.44 691.45 708.90' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='684.25 706.96 691.54 708.54 690.04 711.66' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='684.39 706.78 690.26 711.37 687.56 713.53' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='684.59 706.69 687.89 713.37 684.52 714.14' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='684.82 706.69 684.89 714.14 681.52 713.37' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='685.02 706.78 681.85 713.53 679.14 711.37' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='685.16 706.96 679.37 711.66 677.87 708.54' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='685.20 707.17 677.96 708.90 677.96 705.44' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='685.16 707.39 677.87 705.80 679.37 702.69' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='685.02 707.56 679.14 702.97 681.85 700.82' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='684.82 707.66 681.52 700.98 684.89 700.21' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='733.12 645.37 733.04 637.92 736.41 638.68' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='732.92 645.27 736.08 638.53 738.79 640.68' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='732.78 645.10 738.56 640.39 740.06 643.51' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='732.73 644.88 739.98 643.15 739.98 646.61' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='732.78 644.66 740.06 646.25 738.56 649.37' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='732.92 644.49 738.79 649.08 736.08 651.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='733.12 644.39 736.41 651.08 733.04 651.85' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='733.34 644.39 733.41 651.85 730.04 651.08' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='733.54 644.49 730.37 651.24 727.67 649.08' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='733.68 644.66 727.90 649.37 726.40 646.25' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='733.73 644.88 726.48 646.61 726.48 643.15' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='733.68 645.10 726.40 643.51 727.90 640.39' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='733.54 645.27 727.67 640.68 730.37 638.53' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='733.34 645.37 730.04 638.68 733.41 637.92' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.52 674.13 775.45 666.68 778.82 667.45' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.32 674.03 778.49 667.29 781.19 669.44' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.18 673.86 780.97 669.16 782.47 672.27' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.13 673.64 782.38 671.91 782.38 675.37' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.18 673.42 782.47 675.01 780.97 678.13' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.32 673.25 781.19 677.84 778.49 680.00' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.52 673.15 778.82 679.84 775.45 680.61' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.75 673.15 775.82 680.61 772.45 679.84' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.95 673.25 772.78 680.00 770.07 677.84' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='776.09 673.42 770.30 678.13 768.80 675.01' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='776.13 673.64 768.89 675.37 768.89 671.91' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='776.09 673.86 768.80 672.27 770.30 669.16' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.95 674.03 770.07 669.44 772.78 667.29' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='775.75 674.13 772.45 667.45 775.82 666.68' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='811.94 706.52 811.87 699.07 815.24 699.84' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='811.74 706.42 814.91 699.68 817.62 701.83' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='811.61 706.25 817.39 701.55 818.89 704.66' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='811.56 706.03 818.81 704.30 818.81 707.76' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='811.61 705.82 818.89 707.40 817.39 710.52' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='811.74 705.64 817.62 710.23 814.91 712.39' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='811.94 705.55 815.24 712.23 811.87 713.00' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='812.17 705.55 812.24 713.00 808.87 712.23' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='812.37 705.64 809.20 712.39 806.50 710.23' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='812.51 705.82 806.72 710.52 805.22 707.40' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='812.56 706.03 805.31 707.76 805.31 704.30' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='812.51 706.25 805.22 704.66 806.72 701.55' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='812.37 706.42 806.50 701.83 809.20 699.68' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='812.17 706.52 808.87 699.84 812.24 699.07' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.22 685.16 852.15 677.71 855.52 678.48' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.02 685.06 855.19 678.32 857.90 680.47' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='851.88 684.89 857.67 680.19 859.17 683.30' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='851.84 684.67 859.08 682.94 859.08 686.40' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='851.88 684.46 859.17 686.04 857.67 689.16' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.02 684.28 857.90 688.87 855.19 691.03' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.22 684.19 855.52 690.87 852.15 691.64' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.45 684.19 852.52 691.64 849.15 690.87' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.65 684.28 849.48 691.03 846.78 688.87' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.79 684.46 847.00 689.16 845.50 686.04' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.84 684.67 845.59 686.40 845.59 682.94' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.79 684.89 845.50 683.30 847.00 680.19' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.65 685.06 846.78 680.47 849.48 678.32' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='852.45 685.16 849.15 678.48 852.52 677.71' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.33 708.52 888.26 701.07 891.63 701.84' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.13 708.42 891.30 701.68 894.00 703.83' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='887.99 708.25 893.77 703.55 895.27 706.66' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='887.94 708.03 895.19 706.30 895.19 709.76' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='887.99 707.82 895.27 709.40 893.77 712.52' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.13 707.64 894.00 712.23 891.30 714.39' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.33 707.55 891.63 714.23 888.26 715.00' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.55 707.55 888.63 715.00 885.25 714.23' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.75 707.64 885.59 714.39 882.88 712.23' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.89 707.82 883.11 712.52 881.61 709.40' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.94 708.03 881.69 709.76 881.69 706.30' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.89 708.25 881.61 706.66 883.11 703.55' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.75 708.42 882.88 703.83 885.59 701.68' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='888.55 708.52 885.25 701.84 888.63 701.07' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='927.59 690.63 927.52 683.18 930.89 683.95' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='927.39 690.54 930.56 683.79 933.26 685.95' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='927.25 690.36 933.03 685.66 934.53 688.77' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='927.20 690.15 934.45 688.42 934.45 691.87' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='927.25 689.93 934.53 691.52 933.03 694.63' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='927.39 689.75 933.26 694.34 930.56 696.50' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='927.59 689.66 930.89 696.34 927.52 697.11' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='927.81 689.66 927.88 697.11 924.51 696.34' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='928.01 689.75 924.84 696.50 922.14 694.34' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='928.15 689.93 922.37 694.63 920.87 691.52' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='928.20 690.15 920.95 691.87 920.95 688.42' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='928.15 690.36 920.87 688.77 922.37 685.66' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='928.01 690.54 922.14 685.95 924.84 683.79' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='927.81 690.63 924.51 683.95 927.88 683.18' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='964.60 703.13 964.52 695.68 967.89 696.45' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='964.40 703.04 967.56 696.29 970.27 698.45' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='964.26 702.86 970.04 698.16 971.54 701.28' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='964.21 702.65 971.46 700.92 971.46 704.38' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='964.26 702.43 971.54 704.02 970.04 707.13' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='964.40 702.26 970.27 706.85 967.56 709.00' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='964.60 702.16 967.89 708.84 964.52 709.61' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='964.82 702.16 964.89 709.61 961.52 708.84' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='965.02 702.26 961.85 709.00 959.15 706.85' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='965.16 702.43 959.38 707.13 957.88 704.02' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='965.21 702.65 957.96 704.38 957.96 700.92' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='965.16 702.86 957.88 701.28 959.38 698.16' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='965.02 703.04 959.15 698.45 961.85 696.29' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='964.82 703.13 961.52 696.45 964.89 695.68' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='997.03 731.53 996.96 724.08 1000.33 724.85' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='996.83 731.44 1000.00 724.69 1002.70 726.85' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='996.69 731.26 1002.47 726.56 1003.97 729.67' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='996.64 731.04 1003.89 729.32 1003.89 732.77' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='996.69 730.83 1003.97 732.42 1002.47 735.53' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='996.83 730.65 1002.70 735.24 1000.00 737.40' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='997.03 730.56 1000.33 737.24 996.96 738.01' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='997.25 730.56 997.33 738.01 993.95 737.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='997.45 730.65 994.29 737.40 991.58 735.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='997.59 730.83 991.81 735.53 990.31 732.42' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='997.64 731.04 990.39 732.77 990.39 729.32' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='997.59 731.26 990.31 729.67 991.81 726.56' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='997.45 731.44 991.58 726.85 994.29 724.69' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='997.25 731.53 993.95 724.85 997.33 724.08' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1030.01 728.04 1029.93 720.59 1033.30 721.36' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1029.81 727.95 1032.97 721.20 1035.68 723.36' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1029.67 727.77 1035.45 723.07 1036.95 726.19' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1029.62 727.56 1036.87 725.83 1036.87 729.29' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1029.67 727.34 1036.95 728.93 1035.45 732.04' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1029.81 727.17 1035.68 731.76 1032.97 733.91' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1030.01 727.07 1033.30 733.75 1029.93 734.52' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1030.23 727.07 1030.30 734.52 1026.93 733.75' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1030.43 727.17 1027.26 733.91 1024.56 731.76' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1030.57 727.34 1024.79 732.04 1023.29 728.93' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1030.62 727.56 1023.37 729.29 1023.37 725.83' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1030.57 727.77 1023.29 726.19 1024.79 723.07' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1030.43 727.95 1024.56 723.36 1027.26 721.20' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1030.23 728.04 1026.93 721.36 1030.30 720.59' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1063.85 722.46 1063.78 715.00 1067.15 715.77' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1063.65 722.36 1066.82 715.61 1069.52 717.77' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1063.51 722.19 1069.30 717.48 1070.80 720.60' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1063.46 721.97 1070.71 720.24 1070.71 723.70' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1063.51 721.75 1070.80 723.34 1069.30 726.46' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1063.65 721.58 1069.52 726.17 1066.82 728.32' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1063.85 721.48 1067.15 728.16 1063.78 728.93' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1064.08 721.48 1064.15 728.93 1060.78 728.16' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1064.28 721.58 1061.11 728.32 1058.40 726.17' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1064.42 721.75 1058.63 726.46 1057.13 723.34' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1064.46 721.97 1057.22 723.70 1057.22 720.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1064.42 722.19 1057.13 720.60 1058.63 717.48' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1064.28 722.36 1058.40 717.77 1061.11 715.61' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1064.08 722.46 1060.78 715.77 1064.15 715.00' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='156.03 554.30 156.15 546.92 161.28 554.18' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='156.03 553.48 161.28 553.60 156.15 560.86' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='156.60 553.48 156.48 560.86 151.36 553.60' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='156.60 554.30 151.36 554.18 156.48 546.92' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='227.35 562.86 227.47 555.48 232.59 562.74' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='227.35 562.04 232.59 562.16 227.47 569.42' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='227.92 562.04 227.80 569.42 222.68 562.16' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='227.92 562.86 222.68 562.74 227.80 555.48' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='306.27 541.24 306.39 533.86 311.51 541.12' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='306.27 540.42 311.51 540.54 306.39 547.80' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='306.84 540.42 306.72 547.80 301.60 540.54' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='306.84 541.24 301.60 541.12 306.72 533.86' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='381.86 550.45 381.98 543.06 387.10 550.33' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='381.86 549.63 387.10 549.75 381.98 557.01' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='382.43 549.63 382.31 557.01 377.19 549.75' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='382.43 550.45 377.19 550.33 382.31 543.06' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='456.69 552.57 456.82 545.19 461.94 552.46' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='456.69 551.76 461.94 551.87 456.82 559.14' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='457.27 551.76 457.15 559.14 452.02 551.87' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='457.27 552.57 452.02 552.46 457.15 545.19' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='535.61 541.25 535.73 533.87 540.85 541.13' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='535.61 540.43 540.85 540.55 535.73 547.81' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='536.18 540.43 536.06 547.81 530.94 540.55' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='536.18 541.25 530.94 541.13 536.06 533.87' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='609.50 555.28 609.63 547.90 614.75 555.16' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='609.50 554.46 614.75 554.58 609.63 561.84' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='610.08 554.46 609.96 561.84 604.83 554.58' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='610.08 555.28 604.83 555.16 609.96 547.90' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='682.36 558.31 682.48 550.93 687.60 558.19' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='682.36 557.49 687.60 557.61 682.48 564.87' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='682.93 557.49 682.81 564.87 677.69 557.61' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='682.93 558.31 677.69 558.19 682.81 550.93' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='754.46 560.53 754.58 553.15 759.70 560.41' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='754.46 559.71 759.70 559.83 754.58 567.09' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='755.03 559.71 754.91 567.09 749.79 559.83' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='755.03 560.53 749.79 560.41 754.91 553.15' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='830.91 548.03 831.03 540.65 836.15 547.91' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='830.91 547.21 836.15 547.33 831.03 554.59' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='831.48 547.21 831.36 554.59 826.24 547.33' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='831.48 548.03 826.24 547.91 831.36 540.65' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='905.27 553.94 905.39 546.56 910.51 553.82' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='905.27 553.12 910.51 553.24 905.39 560.50' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='905.84 553.12 905.72 560.50 900.60 553.24' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='905.84 553.94 900.60 553.82 905.72 546.56' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='971.66 578.16 971.78 570.77 976.90 578.04' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='971.66 577.34 976.90 577.45 971.78 584.72' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='972.23 577.34 972.11 584.72 966.99 577.45' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='972.23 578.16 966.99 578.04 972.11 570.77' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1054.96 529.70 1055.08 522.32 1060.20 529.58' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1054.96 528.88 1060.20 529.00 1055.08 536.26' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1055.53 528.88 1055.41 536.26 1050.29 529.00' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='1055.53 529.70 1050.29 529.58 1055.41 522.32' shape-rendering='crispEdges' />
+<line x1='437.29' y1='213.09' x2='440.11' y2='213.74'  stroke='#000000'/>
+<line x1='440.11' y1='213.74' x2='442.37' y2='215.54'  stroke='#000000'/>
+<line x1='442.37' y1='215.54' x2='443.63' y2='218.15'  stroke='#000000'/>
+<line x1='443.63' y1='218.15' x2='443.63' y2='221.04'  stroke='#000000'/>
+<line x1='443.63' y1='221.04' x2='442.37' y2='223.64'  stroke='#000000'/>
+<line x1='442.37' y1='223.64' x2='440.11' y2='225.45'  stroke='#000000'/>
+<line x1='440.11' y1='225.45' x2='437.29' y2='226.09'  stroke='#000000'/>
+<line x1='437.29' y1='226.09' x2='434.47' y2='225.45'  stroke='#000000'/>
+<line x1='434.47' y1='225.45' x2='432.21' y2='223.64'  stroke='#000000'/>
+<line x1='432.21' y1='223.64' x2='430.95' y2='221.04'  stroke='#000000'/>
+<line x1='430.95' y1='221.04' x2='430.95' y2='218.15'  stroke='#000000'/>
+<line x1='430.95' y1='218.15' x2='432.21' y2='215.54'  stroke='#000000'/>
+<line x1='432.21' y1='215.54' x2='434.47' y2='213.74'  stroke='#000000'/>
+<line x1='434.47' y1='213.74' x2='437.29' y2='213.09'  stroke='#000000'/>
+<line x1='437.29' y1='213.09' x2='437.29' y2='213.09'  stroke='#000000'/>
+<line x1='743.44' y1='244.94' x2='746.26' y2='245.58'  stroke='#000000'/>
+<line x1='746.26' y1='245.58' x2='748.53' y2='247.39'  stroke='#000000'/>
+<line x1='748.53' y1='247.39' x2='749.78' y2='249.99'  stroke='#000000'/>
+<line x1='749.78' y1='249.99' x2='749.78' y2='252.89'  stroke='#000000'/>
+<line x1='749.78' y1='252.89' x2='748.53' y2='255.49'  stroke='#000000'/>
+<line x1='748.53' y1='255.49' x2='746.26' y2='257.30'  stroke='#000000'/>
+<line x1='746.26' y1='257.30' x2='743.44' y2='257.94'  stroke='#000000'/>
+<line x1='743.44' y1='257.94' x2='740.62' y2='257.30'  stroke='#000000'/>
+<line x1='740.62' y1='257.30' x2='738.36' y2='255.49'  stroke='#000000'/>
+<line x1='738.36' y1='255.49' x2='737.11' y2='252.89'  stroke='#000000'/>
+<line x1='737.11' y1='252.89' x2='737.11' y2='249.99'  stroke='#000000'/>
+<line x1='737.11' y1='249.99' x2='738.36' y2='247.39'  stroke='#000000'/>
+<line x1='738.36' y1='247.39' x2='740.62' y2='245.58'  stroke='#000000'/>
+<line x1='740.62' y1='245.58' x2='743.44' y2='244.94'  stroke='#000000'/>
+<line x1='743.44' y1='244.94' x2='743.44' y2='244.94'  stroke='#000000'/>
+<line x1='1051.16' y1='243.73' x2='1053.98' y2='244.37'  stroke='#000000'/>
+<line x1='1053.98' y1='244.37' x2='1056.25' y2='246.17'  stroke='#000000'/>
+<line x1='1056.25' y1='246.17' x2='1057.50' y2='248.78'  stroke='#000000'/>
+<line x1='1057.50' y1='248.78' x2='1057.50' y2='251.67'  stroke='#000000'/>
+<line x1='1057.50' y1='251.67' x2='1056.25' y2='254.28'  stroke='#000000'/>
+<line x1='1056.25' y1='254.28' x2='1053.98' y2='256.08'  stroke='#000000'/>
+<line x1='1053.98' y1='256.08' x2='1051.16' y2='256.73'  stroke='#000000'/>
+<line x1='1051.16' y1='256.73' x2='1048.34' y2='256.08'  stroke='#000000'/>
+<line x1='1048.34' y1='256.08' x2='1046.08' y2='254.28'  stroke='#000000'/>
+<line x1='1046.08' y1='254.28' x2='1044.83' y2='251.67'  stroke='#000000'/>
+<line x1='1044.83' y1='251.67' x2='1044.83' y2='248.78'  stroke='#000000'/>
+<line x1='1044.83' y1='248.78' x2='1046.08' y2='246.17'  stroke='#000000'/>
+<line x1='1046.08' y1='246.17' x2='1048.34' y2='244.37'  stroke='#000000'/>
+<line x1='1048.34' y1='244.37' x2='1051.16' y2='243.73'  stroke='#000000'/>
+<line x1='1051.16' y1='243.73' x2='1051.16' y2='243.73'  stroke='#000000'/>
+<line x1='1342.68' y1='255.31' x2='1345.50' y2='255.95'  stroke='#000000'/>
+<line x1='1345.50' y1='255.95' x2='1347.76' y2='257.75'  stroke='#000000'/>
+<line x1='1347.76' y1='257.75' x2='1349.02' y2='260.36'  stroke='#000000'/>
+<line x1='1349.02' y1='260.36' x2='1349.02' y2='263.25'  stroke='#000000'/>
+<line x1='1349.02' y1='263.25' x2='1347.76' y2='265.86'  stroke='#000000'/>
+<line x1='1347.76' y1='265.86' x2='1345.50' y2='267.66'  stroke='#000000'/>
+<line x1='1345.50' y1='267.66' x2='1342.68' y2='268.31'  stroke='#000000'/>
+<line x1='1342.68' y1='268.31' x2='1339.86' y2='267.66'  stroke='#000000'/>
+<line x1='1339.86' y1='267.66' x2='1337.60' y2='265.86'  stroke='#000000'/>
+<line x1='1337.60' y1='265.86' x2='1336.34' y2='263.25'  stroke='#000000'/>
+<line x1='1336.34' y1='263.25' x2='1336.34' y2='260.36'  stroke='#000000'/>
+<line x1='1336.34' y1='260.36' x2='1337.60' y2='257.75'  stroke='#000000'/>
+<line x1='1337.60' y1='257.75' x2='1339.86' y2='255.95'  stroke='#000000'/>
+<line x1='1339.86' y1='255.95' x2='1342.68' y2='255.31'  stroke='#000000'/>
+<line x1='1342.68' y1='255.31' x2='1342.68' y2='255.31'  stroke='#000000'/>
+<line x1='629.51' y1='120.69' x2='634.06' y2='131.74'  stroke='#000000'/>
+<line x1='634.06' y1='131.74' x2='624.96' y2='131.74'  stroke='#000000'/>
+<line x1='624.96' y1='131.74' x2='629.51' y2='120.69'  stroke='#000000'/>
+<line x1='1149.14' y1='131.83' x2='1153.69' y2='142.88'  stroke='#000000'/>
+<line x1='1153.69' y1='142.88' x2='1144.59' y2='142.88'  stroke='#000000'/>
+<line x1='1144.59' y1='142.88' x2='1149.14' y2='131.83'  stroke='#000000'/>
+<line x1='203.30' y1='454.46' x2='203.30' y2='467.46'  stroke='#000000'/>
+<line x1='203.30' y1='467.46' x2='190.30' y2='467.46'  stroke='#000000'/>
+<line x1='190.30' y1='467.46' x2='190.30' y2='454.46'  stroke='#000000'/>
+<line x1='190.30' y1='454.46' x2='203.30' y2='454.46'  stroke='#000000'/>
+<line x1='318.45' y1='453.74' x2='318.45' y2='466.74'  stroke='#000000'/>
+<line x1='318.45' y1='466.74' x2='305.45' y2='466.74'  stroke='#000000'/>
+<line x1='305.45' y1='466.74' x2='305.45' y2='453.74'  stroke='#000000'/>
+<line x1='305.45' y1='453.74' x2='318.45' y2='453.74'  stroke='#000000'/>
+<line x1='432.15' y1='456.37' x2='432.15' y2='469.37'  stroke='#000000'/>
+<line x1='432.15' y1='469.37' x2='419.15' y2='469.37'  stroke='#000000'/>
+<line x1='419.15' y1='469.37' x2='419.15' y2='456.37'  stroke='#000000'/>
+<line x1='419.15' y1='456.37' x2='432.15' y2='456.37'  stroke='#000000'/>
+<line x1='544.29' y1='459.39' x2='544.29' y2='472.39'  stroke='#000000'/>
+<line x1='544.29' y1='472.39' x2='531.29' y2='472.39'  stroke='#000000'/>
+<line x1='531.29' y1='472.39' x2='531.29' y2='459.39'  stroke='#000000'/>
+<line x1='531.29' y1='459.39' x2='544.29' y2='459.39'  stroke='#000000'/>
+<line x1='659.58' y1='453.47' x2='659.58' y2='466.47'  stroke='#000000'/>
+<line x1='659.58' y1='466.47' x2='646.58' y2='466.47'  stroke='#000000'/>
+<line x1='646.58' y1='466.47' x2='646.58' y2='453.47'  stroke='#000000'/>
+<line x1='646.58' y1='453.47' x2='659.58' y2='453.47'  stroke='#000000'/>
+<line x1='784.96' y1='435.56' x2='784.96' y2='448.56'  stroke='#000000'/>
+<line x1='784.96' y1='448.56' x2='771.96' y2='448.56'  stroke='#000000'/>
+<line x1='771.96' y1='448.56' x2='771.96' y2='435.56'  stroke='#000000'/>
+<line x1='771.96' y1='435.56' x2='784.96' y2='435.56'  stroke='#000000'/>
+<line x1='905.70' y1='443.55' x2='905.70' y2='456.55'  stroke='#000000'/>
+<line x1='905.70' y1='456.55' x2='892.70' y2='456.55'  stroke='#000000'/>
+<line x1='892.70' y1='456.55' x2='892.70' y2='443.55'  stroke='#000000'/>
+<line x1='892.70' y1='443.55' x2='905.70' y2='443.55'  stroke='#000000'/>
+<line x1='1013.80' y1='467.20' x2='1013.80' y2='480.20'  stroke='#000000'/>
+<line x1='1013.80' y1='480.20' x2='1000.80' y2='480.20'  stroke='#000000'/>
+<line x1='1000.80' y1='480.20' x2='1000.80' y2='467.20'  stroke='#000000'/>
+<line x1='1000.80' y1='467.20' x2='1013.80' y2='467.20'  stroke='#000000'/>
+<line x1='1128.64' y1='454.28' x2='1128.64' y2='467.28'  stroke='#000000'/>
+<line x1='1128.64' y1='467.28' x2='1115.64' y2='467.28'  stroke='#000000'/>
+<line x1='1115.64' y1='467.28' x2='1115.64' y2='454.28'  stroke='#000000'/>
+<line x1='1115.64' y1='454.28' x2='1128.64' y2='454.28'  stroke='#000000'/>
+<line x1='369.26' y1='258.49' x2='372.08' y2='259.14'  stroke='#000000'/>
+<line x1='372.08' y1='259.14' x2='374.34' y2='260.94'  stroke='#000000'/>
+<line x1='374.34' y1='260.94' x2='375.59' y2='263.55'  stroke='#000000'/>
+<line x1='375.59' y1='263.55' x2='375.59' y2='266.44'  stroke='#000000'/>
+<line x1='375.59' y1='266.44' x2='374.34' y2='269.04'  stroke='#000000'/>
+<line x1='374.34' y1='269.04' x2='372.08' y2='270.85'  stroke='#000000'/>
+<line x1='372.08' y1='270.85' x2='369.26' y2='271.49'  stroke='#000000'/>
+<line x1='369.26' y1='271.49' x2='366.44' y2='270.85'  stroke='#000000'/>
+<line x1='366.44' y1='270.85' x2='364.18' y2='269.04'  stroke='#000000'/>
+<line x1='364.18' y1='269.04' x2='362.92' y2='266.44'  stroke='#000000'/>
+<line x1='362.92' y1='266.44' x2='362.92' y2='263.55'  stroke='#000000'/>
+<line x1='362.92' y1='263.55' x2='364.18' y2='260.94'  stroke='#000000'/>
+<line x1='364.18' y1='260.94' x2='366.44' y2='259.14'  stroke='#000000'/>
+<line x1='366.44' y1='259.14' x2='369.26' y2='258.49'  stroke='#000000'/>
+<line x1='369.26' y1='258.49' x2='369.26' y2='258.49'  stroke='#000000'/>
+<line x1='431.17' y1='586.33' x2='433.99' y2='586.97'  stroke='#000000'/>
+<line x1='433.99' y1='586.97' x2='436.26' y2='588.78'  stroke='#000000'/>
+<line x1='436.26' y1='588.78' x2='437.51' y2='591.38'  stroke='#000000'/>
+<line x1='437.51' y1='591.38' x2='437.51' y2='594.28'  stroke='#000000'/>
+<line x1='437.51' y1='594.28' x2='436.26' y2='596.88'  stroke='#000000'/>
+<line x1='436.26' y1='596.88' x2='433.99' y2='598.69'  stroke='#000000'/>
+<line x1='433.99' y1='598.69' x2='431.17' y2='599.33'  stroke='#000000'/>
+<line x1='431.17' y1='599.33' x2='428.35' y2='598.69'  stroke='#000000'/>
+<line x1='428.35' y1='598.69' x2='426.09' y2='596.88'  stroke='#000000'/>
+<line x1='426.09' y1='596.88' x2='424.84' y2='594.28'  stroke='#000000'/>
+<line x1='424.84' y1='594.28' x2='424.84' y2='591.38'  stroke='#000000'/>
+<line x1='424.84' y1='591.38' x2='426.09' y2='588.78'  stroke='#000000'/>
+<line x1='426.09' y1='588.78' x2='428.35' y2='586.97'  stroke='#000000'/>
+<line x1='428.35' y1='586.97' x2='431.17' y2='586.33'  stroke='#000000'/>
+<line x1='431.17' y1='586.33' x2='431.17' y2='586.33'  stroke='#000000'/>
+<line x1='468.27' y1='695.59' x2='471.09' y2='696.23'  stroke='#000000'/>
+<line x1='471.09' y1='696.23' x2='473.35' y2='698.04'  stroke='#000000'/>
+<line x1='473.35' y1='698.04' x2='474.61' y2='700.64'  stroke='#000000'/>
+<line x1='474.61' y1='700.64' x2='474.61' y2='703.53'  stroke='#000000'/>
+<line x1='474.61' y1='703.53' x2='473.35' y2='706.14'  stroke='#000000'/>
+<line x1='473.35' y1='706.14' x2='471.09' y2='707.94'  stroke='#000000'/>
+<line x1='471.09' y1='707.94' x2='468.27' y2='708.59'  stroke='#000000'/>
+<line x1='468.27' y1='708.59' x2='465.45' y2='707.94'  stroke='#000000'/>
+<line x1='465.45' y1='707.94' x2='463.19' y2='706.14'  stroke='#000000'/>
+<line x1='463.19' y1='706.14' x2='461.93' y2='703.53'  stroke='#000000'/>
+<line x1='461.93' y1='703.53' x2='461.93' y2='700.64'  stroke='#000000'/>
+<line x1='461.93' y1='700.64' x2='463.19' y2='698.04'  stroke='#000000'/>
+<line x1='463.19' y1='698.04' x2='465.45' y2='696.23'  stroke='#000000'/>
+<line x1='465.45' y1='696.23' x2='468.27' y2='695.59'  stroke='#000000'/>
+<line x1='468.27' y1='695.59' x2='468.27' y2='695.59'  stroke='#000000'/>
+<line x1='507.92' y1='681.54' x2='510.74' y2='682.19'  stroke='#000000'/>
+<line x1='510.74' y1='682.19' x2='513.00' y2='683.99'  stroke='#000000'/>
+<line x1='513.00' y1='683.99' x2='514.26' y2='686.60'  stroke='#000000'/>
+<line x1='514.26' y1='686.60' x2='514.26' y2='689.49'  stroke='#000000'/>
+<line x1='514.26' y1='689.49' x2='513.00' y2='692.10'  stroke='#000000'/>
+<line x1='513.00' y1='692.10' x2='510.74' y2='693.90'  stroke='#000000'/>
+<line x1='510.74' y1='693.90' x2='507.92' y2='694.54'  stroke='#000000'/>
+<line x1='507.92' y1='694.54' x2='505.10' y2='693.90'  stroke='#000000'/>
+<line x1='505.10' y1='693.90' x2='502.84' y2='692.10'  stroke='#000000'/>
+<line x1='502.84' y1='692.10' x2='501.58' y2='689.49'  stroke='#000000'/>
+<line x1='501.58' y1='689.49' x2='501.58' y2='686.60'  stroke='#000000'/>
+<line x1='501.58' y1='686.60' x2='502.84' y2='683.99'  stroke='#000000'/>
+<line x1='502.84' y1='683.99' x2='505.10' y2='682.19'  stroke='#000000'/>
+<line x1='505.10' y1='682.19' x2='507.92' y2='681.54'  stroke='#000000'/>
+<line x1='507.92' y1='681.54' x2='507.92' y2='681.54'  stroke='#000000'/>
+<line x1='542.97' y1='707.94' x2='545.79' y2='708.59'  stroke='#000000'/>
+<line x1='545.79' y1='708.59' x2='548.05' y2='710.39'  stroke='#000000'/>
+<line x1='548.05' y1='710.39' x2='549.31' y2='713.00'  stroke='#000000'/>
+<line x1='549.31' y1='713.00' x2='549.31' y2='715.89'  stroke='#000000'/>
+<line x1='549.31' y1='715.89' x2='548.05' y2='718.50'  stroke='#000000'/>
+<line x1='548.05' y1='718.50' x2='545.79' y2='720.30'  stroke='#000000'/>
+<line x1='545.79' y1='720.30' x2='542.97' y2='720.94'  stroke='#000000'/>
+<line x1='542.97' y1='720.94' x2='540.15' y2='720.30'  stroke='#000000'/>
+<line x1='540.15' y1='720.30' x2='537.89' y2='718.50'  stroke='#000000'/>
+<line x1='537.89' y1='718.50' x2='536.63' y2='715.89'  stroke='#000000'/>
+<line x1='536.63' y1='715.89' x2='536.63' y2='713.00'  stroke='#000000'/>
+<line x1='536.63' y1='713.00' x2='537.89' y2='710.39'  stroke='#000000'/>
+<line x1='537.89' y1='710.39' x2='540.15' y2='708.59'  stroke='#000000'/>
+<line x1='540.15' y1='708.59' x2='542.97' y2='707.94'  stroke='#000000'/>
+<line x1='542.97' y1='707.94' x2='542.97' y2='707.94'  stroke='#000000'/>
+<line x1='577.81' y1='709.13' x2='580.63' y2='709.77'  stroke='#000000'/>
+<line x1='580.63' y1='709.77' x2='582.89' y2='711.58'  stroke='#000000'/>
+<line x1='582.89' y1='711.58' x2='584.15' y2='714.18'  stroke='#000000'/>
+<line x1='584.15' y1='714.18' x2='584.15' y2='717.08'  stroke='#000000'/>
+<line x1='584.15' y1='717.08' x2='582.89' y2='719.68'  stroke='#000000'/>
+<line x1='582.89' y1='719.68' x2='580.63' y2='721.49'  stroke='#000000'/>
+<line x1='580.63' y1='721.49' x2='577.81' y2='722.13'  stroke='#000000'/>
+<line x1='577.81' y1='722.13' x2='574.99' y2='721.49'  stroke='#000000'/>
+<line x1='574.99' y1='721.49' x2='572.73' y2='719.68'  stroke='#000000'/>
+<line x1='572.73' y1='719.68' x2='571.47' y2='717.08'  stroke='#000000'/>
+<line x1='571.47' y1='717.08' x2='571.47' y2='714.18'  stroke='#000000'/>
+<line x1='571.47' y1='714.18' x2='572.73' y2='711.58'  stroke='#000000'/>
+<line x1='572.73' y1='711.58' x2='574.99' y2='709.77'  stroke='#000000'/>
+<line x1='574.99' y1='709.77' x2='577.81' y2='709.13'  stroke='#000000'/>
+<line x1='577.81' y1='709.13' x2='577.81' y2='709.13'  stroke='#000000'/>
+<line x1='612.81' y1='708.24' x2='615.63' y2='708.88'  stroke='#000000'/>
+<line x1='615.63' y1='708.88' x2='617.90' y2='710.69'  stroke='#000000'/>
+<line x1='617.90' y1='710.69' x2='619.15' y2='713.29'  stroke='#000000'/>
+<line x1='619.15' y1='713.29' x2='619.15' y2='716.19'  stroke='#000000'/>
+<line x1='619.15' y1='716.19' x2='617.90' y2='718.79'  stroke='#000000'/>
+<line x1='617.90' y1='718.79' x2='615.63' y2='720.60'  stroke='#000000'/>
+<line x1='615.63' y1='720.60' x2='612.81' y2='721.24'  stroke='#000000'/>
+<line x1='612.81' y1='721.24' x2='609.99' y2='720.60'  stroke='#000000'/>
+<line x1='609.99' y1='720.60' x2='607.73' y2='718.79'  stroke='#000000'/>
+<line x1='607.73' y1='718.79' x2='606.48' y2='716.19'  stroke='#000000'/>
+<line x1='606.48' y1='716.19' x2='606.48' y2='713.29'  stroke='#000000'/>
+<line x1='606.48' y1='713.29' x2='607.73' y2='710.69'  stroke='#000000'/>
+<line x1='607.73' y1='710.69' x2='609.99' y2='708.88'  stroke='#000000'/>
+<line x1='609.99' y1='708.88' x2='612.81' y2='708.24'  stroke='#000000'/>
+<line x1='612.81' y1='708.24' x2='612.81' y2='708.24'  stroke='#000000'/>
+<line x1='648.46' y1='704.13' x2='651.28' y2='704.78'  stroke='#000000'/>
+<line x1='651.28' y1='704.78' x2='653.54' y2='706.58'  stroke='#000000'/>
+<line x1='653.54' y1='706.58' x2='654.80' y2='709.19'  stroke='#000000'/>
+<line x1='654.80' y1='709.19' x2='654.80' y2='712.08'  stroke='#000000'/>
+<line x1='654.80' y1='712.08' x2='653.54' y2='714.68'  stroke='#000000'/>
+<line x1='653.54' y1='714.68' x2='651.28' y2='716.49'  stroke='#000000'/>
+<line x1='651.28' y1='716.49' x2='648.46' y2='717.13'  stroke='#000000'/>
+<line x1='648.46' y1='717.13' x2='645.64' y2='716.49'  stroke='#000000'/>
+<line x1='645.64' y1='716.49' x2='643.38' y2='714.68'  stroke='#000000'/>
+<line x1='643.38' y1='714.68' x2='642.12' y2='712.08'  stroke='#000000'/>
+<line x1='642.12' y1='712.08' x2='642.12' y2='709.19'  stroke='#000000'/>
+<line x1='642.12' y1='709.19' x2='643.38' y2='706.58'  stroke='#000000'/>
+<line x1='643.38' y1='706.58' x2='645.64' y2='704.78'  stroke='#000000'/>
+<line x1='645.64' y1='704.78' x2='648.46' y2='704.13'  stroke='#000000'/>
+<line x1='648.46' y1='704.13' x2='648.46' y2='704.13'  stroke='#000000'/>
+<line x1='684.70' y1='700.67' x2='687.53' y2='701.32'  stroke='#000000'/>
+<line x1='687.53' y1='701.32' x2='689.79' y2='703.12'  stroke='#000000'/>
+<line x1='689.79' y1='703.12' x2='691.04' y2='705.73'  stroke='#000000'/>
+<line x1='691.04' y1='705.73' x2='691.04' y2='708.62'  stroke='#000000'/>
+<line x1='691.04' y1='708.62' x2='689.79' y2='711.23'  stroke='#000000'/>
+<line x1='689.79' y1='711.23' x2='687.53' y2='713.03'  stroke='#000000'/>
+<line x1='687.53' y1='713.03' x2='684.70' y2='713.67'  stroke='#000000'/>
+<line x1='684.70' y1='713.67' x2='681.88' y2='713.03'  stroke='#000000'/>
+<line x1='681.88' y1='713.03' x2='679.62' y2='711.23'  stroke='#000000'/>
+<line x1='679.62' y1='711.23' x2='678.37' y2='708.62'  stroke='#000000'/>
+<line x1='678.37' y1='708.62' x2='678.37' y2='705.73'  stroke='#000000'/>
+<line x1='678.37' y1='705.73' x2='679.62' y2='703.12'  stroke='#000000'/>
+<line x1='679.62' y1='703.12' x2='681.88' y2='701.32'  stroke='#000000'/>
+<line x1='681.88' y1='701.32' x2='684.70' y2='700.67'  stroke='#000000'/>
+<line x1='684.70' y1='700.67' x2='684.70' y2='700.67'  stroke='#000000'/>
+<line x1='733.23' y1='638.38' x2='736.05' y2='639.02'  stroke='#000000'/>
+<line x1='736.05' y1='639.02' x2='738.31' y2='640.83'  stroke='#000000'/>
+<line x1='738.31' y1='640.83' x2='739.56' y2='643.43'  stroke='#000000'/>
+<line x1='739.56' y1='643.43' x2='739.56' y2='646.33'  stroke='#000000'/>
+<line x1='739.56' y1='646.33' x2='738.31' y2='648.93'  stroke='#000000'/>
+<line x1='738.31' y1='648.93' x2='736.05' y2='650.74'  stroke='#000000'/>
+<line x1='736.05' y1='650.74' x2='733.23' y2='651.38'  stroke='#000000'/>
+<line x1='733.23' y1='651.38' x2='730.41' y2='650.74'  stroke='#000000'/>
+<line x1='730.41' y1='650.74' x2='728.15' y2='648.93'  stroke='#000000'/>
+<line x1='728.15' y1='648.93' x2='726.89' y2='646.33'  stroke='#000000'/>
+<line x1='726.89' y1='646.33' x2='726.89' y2='643.43'  stroke='#000000'/>
+<line x1='726.89' y1='643.43' x2='728.15' y2='640.83'  stroke='#000000'/>
+<line x1='728.15' y1='640.83' x2='730.41' y2='639.02'  stroke='#000000'/>
+<line x1='730.41' y1='639.02' x2='733.23' y2='638.38'  stroke='#000000'/>
+<line x1='733.23' y1='638.38' x2='733.23' y2='638.38'  stroke='#000000'/>
+<line x1='775.63' y1='667.14' x2='778.46' y2='667.79'  stroke='#000000'/>
+<line x1='778.46' y1='667.79' x2='780.72' y2='669.59'  stroke='#000000'/>
+<line x1='780.72' y1='669.59' x2='781.97' y2='672.20'  stroke='#000000'/>
+<line x1='781.97' y1='672.20' x2='781.97' y2='675.09'  stroke='#000000'/>
+<line x1='781.97' y1='675.09' x2='780.72' y2='677.69'  stroke='#000000'/>
+<line x1='780.72' y1='677.69' x2='778.46' y2='679.50'  stroke='#000000'/>
+<line x1='778.46' y1='679.50' x2='775.63' y2='680.14'  stroke='#000000'/>
+<line x1='775.63' y1='680.14' x2='772.81' y2='679.50'  stroke='#000000'/>
+<line x1='772.81' y1='679.50' x2='770.55' y2='677.69'  stroke='#000000'/>
+<line x1='770.55' y1='677.69' x2='769.30' y2='675.09'  stroke='#000000'/>
+<line x1='769.30' y1='675.09' x2='769.30' y2='672.19'  stroke='#000000'/>
+<line x1='769.30' y1='672.19' x2='770.55' y2='669.59'  stroke='#000000'/>
+<line x1='770.55' y1='669.59' x2='772.81' y2='667.79'  stroke='#000000'/>
+<line x1='772.81' y1='667.79' x2='775.63' y2='667.14'  stroke='#000000'/>
+<line x1='775.63' y1='667.14' x2='775.63' y2='667.14'  stroke='#000000'/>
+<line x1='812.06' y1='699.53' x2='814.88' y2='700.18'  stroke='#000000'/>
+<line x1='814.88' y1='700.18' x2='817.14' y2='701.98'  stroke='#000000'/>
+<line x1='817.14' y1='701.98' x2='818.39' y2='704.59'  stroke='#000000'/>
+<line x1='818.39' y1='704.59' x2='818.39' y2='707.48'  stroke='#000000'/>
+<line x1='818.39' y1='707.48' x2='817.14' y2='710.09'  stroke='#000000'/>
+<line x1='817.14' y1='710.09' x2='814.88' y2='711.89'  stroke='#000000'/>
+<line x1='814.88' y1='711.89' x2='812.06' y2='712.53'  stroke='#000000'/>
+<line x1='812.06' y1='712.53' x2='809.24' y2='711.89'  stroke='#000000'/>
+<line x1='809.24' y1='711.89' x2='806.97' y2='710.09'  stroke='#000000'/>
+<line x1='806.97' y1='710.09' x2='805.72' y2='707.48'  stroke='#000000'/>
+<line x1='805.72' y1='707.48' x2='805.72' y2='704.59'  stroke='#000000'/>
+<line x1='805.72' y1='704.59' x2='806.97' y2='701.98'  stroke='#000000'/>
+<line x1='806.97' y1='701.98' x2='809.24' y2='700.18'  stroke='#000000'/>
+<line x1='809.24' y1='700.18' x2='812.06' y2='699.53'  stroke='#000000'/>
+<line x1='812.06' y1='699.53' x2='812.06' y2='699.53'  stroke='#000000'/>
+<line x1='852.34' y1='678.17' x2='855.16' y2='678.82'  stroke='#000000'/>
+<line x1='855.16' y1='678.82' x2='857.42' y2='680.62'  stroke='#000000'/>
+<line x1='857.42' y1='680.62' x2='858.67' y2='683.23'  stroke='#000000'/>
+<line x1='858.67' y1='683.23' x2='858.67' y2='686.12'  stroke='#000000'/>
+<line x1='858.67' y1='686.12' x2='857.42' y2='688.73'  stroke='#000000'/>
+<line x1='857.42' y1='688.73' x2='855.16' y2='690.53'  stroke='#000000'/>
+<line x1='855.16' y1='690.53' x2='852.34' y2='691.17'  stroke='#000000'/>
+<line x1='852.34' y1='691.17' x2='849.51' y2='690.53'  stroke='#000000'/>
+<line x1='849.51' y1='690.53' x2='847.25' y2='688.73'  stroke='#000000'/>
+<line x1='847.25' y1='688.73' x2='846.00' y2='686.12'  stroke='#000000'/>
+<line x1='846.00' y1='686.12' x2='846.00' y2='683.23'  stroke='#000000'/>
+<line x1='846.00' y1='683.23' x2='847.25' y2='680.62'  stroke='#000000'/>
+<line x1='847.25' y1='680.62' x2='849.51' y2='678.82'  stroke='#000000'/>
+<line x1='849.51' y1='678.82' x2='852.34' y2='678.17'  stroke='#000000'/>
+<line x1='852.34' y1='678.17' x2='852.34' y2='678.17'  stroke='#000000'/>
+<line x1='888.44' y1='701.53' x2='891.26' y2='702.18'  stroke='#000000'/>
+<line x1='891.26' y1='702.18' x2='893.52' y2='703.98'  stroke='#000000'/>
+<line x1='893.52' y1='703.98' x2='894.78' y2='706.59'  stroke='#000000'/>
+<line x1='894.78' y1='706.59' x2='894.78' y2='709.48'  stroke='#000000'/>
+<line x1='894.78' y1='709.48' x2='893.52' y2='712.09'  stroke='#000000'/>
+<line x1='893.52' y1='712.09' x2='891.26' y2='713.89'  stroke='#000000'/>
+<line x1='891.26' y1='713.89' x2='888.44' y2='714.53'  stroke='#000000'/>
+<line x1='888.44' y1='714.53' x2='885.62' y2='713.89'  stroke='#000000'/>
+<line x1='885.62' y1='713.89' x2='883.36' y2='712.09'  stroke='#000000'/>
+<line x1='883.36' y1='712.09' x2='882.10' y2='709.48'  stroke='#000000'/>
+<line x1='882.10' y1='709.48' x2='882.10' y2='706.59'  stroke='#000000'/>
+<line x1='882.10' y1='706.59' x2='883.36' y2='703.98'  stroke='#000000'/>
+<line x1='883.36' y1='703.98' x2='885.62' y2='702.18'  stroke='#000000'/>
+<line x1='885.62' y1='702.18' x2='888.44' y2='701.53'  stroke='#000000'/>
+<line x1='888.44' y1='701.53' x2='888.44' y2='701.53'  stroke='#000000'/>
+<line x1='927.70' y1='683.65' x2='930.52' y2='684.29'  stroke='#000000'/>
+<line x1='930.52' y1='684.29' x2='932.78' y2='686.09'  stroke='#000000'/>
+<line x1='932.78' y1='686.09' x2='934.04' y2='688.70'  stroke='#000000'/>
+<line x1='934.04' y1='688.70' x2='934.04' y2='691.59'  stroke='#000000'/>
+<line x1='934.04' y1='691.59' x2='932.78' y2='694.20'  stroke='#000000'/>
+<line x1='932.78' y1='694.20' x2='930.52' y2='696.00'  stroke='#000000'/>
+<line x1='930.52' y1='696.00' x2='927.70' y2='696.65'  stroke='#000000'/>
+<line x1='927.70' y1='696.65' x2='924.88' y2='696.00'  stroke='#000000'/>
+<line x1='924.88' y1='696.00' x2='922.62' y2='694.20'  stroke='#000000'/>
+<line x1='922.62' y1='694.20' x2='921.36' y2='691.59'  stroke='#000000'/>
+<line x1='921.36' y1='691.59' x2='921.36' y2='688.70'  stroke='#000000'/>
+<line x1='921.36' y1='688.70' x2='922.62' y2='686.09'  stroke='#000000'/>
+<line x1='922.62' y1='686.09' x2='924.88' y2='684.29'  stroke='#000000'/>
+<line x1='924.88' y1='684.29' x2='927.70' y2='683.65'  stroke='#000000'/>
+<line x1='927.70' y1='683.65' x2='927.70' y2='683.65'  stroke='#000000'/>
+<line x1='964.71' y1='696.15' x2='967.53' y2='696.79'  stroke='#000000'/>
+<line x1='967.53' y1='696.79' x2='969.79' y2='698.59'  stroke='#000000'/>
+<line x1='969.79' y1='698.59' x2='971.04' y2='701.20'  stroke='#000000'/>
+<line x1='971.04' y1='701.20' x2='971.04' y2='704.09'  stroke='#000000'/>
+<line x1='971.04' y1='704.09' x2='969.79' y2='706.70'  stroke='#000000'/>
+<line x1='969.79' y1='706.70' x2='967.53' y2='708.50'  stroke='#000000'/>
+<line x1='967.53' y1='708.50' x2='964.71' y2='709.15'  stroke='#000000'/>
+<line x1='964.71' y1='709.15' x2='961.89' y2='708.50'  stroke='#000000'/>
+<line x1='961.89' y1='708.50' x2='959.63' y2='706.70'  stroke='#000000'/>
+<line x1='959.63' y1='706.70' x2='958.37' y2='704.09'  stroke='#000000'/>
+<line x1='958.37' y1='704.09' x2='958.37' y2='701.20'  stroke='#000000'/>
+<line x1='958.37' y1='701.20' x2='959.63' y2='698.59'  stroke='#000000'/>
+<line x1='959.63' y1='698.59' x2='961.89' y2='696.79'  stroke='#000000'/>
+<line x1='961.89' y1='696.79' x2='964.71' y2='696.15'  stroke='#000000'/>
+<line x1='964.71' y1='696.15' x2='964.71' y2='696.15'  stroke='#000000'/>
+<line x1='997.14' y1='724.54' x2='999.96' y2='725.19'  stroke='#000000'/>
+<line x1='999.96' y1='725.19' x2='1002.22' y2='726.99'  stroke='#000000'/>
+<line x1='1002.22' y1='726.99' x2='1003.48' y2='729.60'  stroke='#000000'/>
+<line x1='1003.48' y1='729.60' x2='1003.48' y2='732.49'  stroke='#000000'/>
+<line x1='1003.48' y1='732.49' x2='1002.22' y2='735.10'  stroke='#000000'/>
+<line x1='1002.22' y1='735.10' x2='999.96' y2='736.90'  stroke='#000000'/>
+<line x1='999.96' y1='736.90' x2='997.14' y2='737.54'  stroke='#000000'/>
+<line x1='997.14' y1='737.54' x2='994.32' y2='736.90'  stroke='#000000'/>
+<line x1='994.32' y1='736.90' x2='992.06' y2='735.10'  stroke='#000000'/>
+<line x1='992.06' y1='735.10' x2='990.80' y2='732.49'  stroke='#000000'/>
+<line x1='990.80' y1='732.49' x2='990.80' y2='729.60'  stroke='#000000'/>
+<line x1='990.80' y1='729.60' x2='992.06' y2='726.99'  stroke='#000000'/>
+<line x1='992.06' y1='726.99' x2='994.32' y2='725.19'  stroke='#000000'/>
+<line x1='994.32' y1='725.19' x2='997.14' y2='724.54'  stroke='#000000'/>
+<line x1='997.14' y1='724.54' x2='997.14' y2='724.54'  stroke='#000000'/>
+<line x1='1030.12' y1='721.06' x2='1032.94' y2='721.70'  stroke='#000000'/>
+<line x1='1032.94' y1='721.70' x2='1035.20' y2='723.50'  stroke='#000000'/>
+<line x1='1035.20' y1='723.50' x2='1036.45' y2='726.11'  stroke='#000000'/>
+<line x1='1036.45' y1='726.11' x2='1036.45' y2='729.00'  stroke='#000000'/>
+<line x1='1036.45' y1='729.00' x2='1035.20' y2='731.61'  stroke='#000000'/>
+<line x1='1035.20' y1='731.61' x2='1032.94' y2='733.41'  stroke='#000000'/>
+<line x1='1032.94' y1='733.41' x2='1030.12' y2='734.06'  stroke='#000000'/>
+<line x1='1030.12' y1='734.06' x2='1027.30' y2='733.41'  stroke='#000000'/>
+<line x1='1027.30' y1='733.41' x2='1025.04' y2='731.61'  stroke='#000000'/>
+<line x1='1025.04' y1='731.61' x2='1023.78' y2='729.00'  stroke='#000000'/>
+<line x1='1023.78' y1='729.00' x2='1023.78' y2='726.11'  stroke='#000000'/>
+<line x1='1023.78' y1='726.11' x2='1025.04' y2='723.50'  stroke='#000000'/>
+<line x1='1025.04' y1='723.50' x2='1027.30' y2='721.70'  stroke='#000000'/>
+<line x1='1027.30' y1='721.70' x2='1030.12' y2='721.06'  stroke='#000000'/>
+<line x1='1030.12' y1='721.06' x2='1030.12' y2='721.06'  stroke='#000000'/>
+<line x1='1063.96' y1='715.47' x2='1066.79' y2='716.11'  stroke='#000000'/>
+<line x1='1066.79' y1='716.11' x2='1069.05' y2='717.92'  stroke='#000000'/>
+<line x1='1069.05' y1='717.92' x2='1070.30' y2='720.52'  stroke='#000000'/>
+<line x1='1070.30' y1='720.52' x2='1070.30' y2='723.42'  stroke='#000000'/>
+<line x1='1070.30' y1='723.42' x2='1069.05' y2='726.02'  stroke='#000000'/>
+<line x1='1069.05' y1='726.02' x2='1066.79' y2='727.83'  stroke='#000000'/>
+<line x1='1066.79' y1='727.83' x2='1063.96' y2='728.47'  stroke='#000000'/>
+<line x1='1063.96' y1='728.47' x2='1061.14' y2='727.83'  stroke='#000000'/>
+<line x1='1061.14' y1='727.83' x2='1058.88' y2='726.02'  stroke='#000000'/>
+<line x1='1058.88' y1='726.02' x2='1057.63' y2='723.42'  stroke='#000000'/>
+<line x1='1057.63' y1='723.42' x2='1057.63' y2='720.52'  stroke='#000000'/>
+<line x1='1057.63' y1='720.52' x2='1058.88' y2='717.92'  stroke='#000000'/>
+<line x1='1058.88' y1='717.92' x2='1061.14' y2='716.11'  stroke='#000000'/>
+<line x1='1061.14' y1='716.11' x2='1063.96' y2='715.47'  stroke='#000000'/>
+<line x1='1063.96' y1='715.47' x2='1063.96' y2='715.47'  stroke='#000000'/>
+<line x1='156.32' y1='547.39' x2='160.87' y2='553.89'  stroke='#000000'/>
+<line x1='160.87' y1='553.89' x2='156.32' y2='560.39'  stroke='#000000'/>
+<line x1='156.32' y1='560.39' x2='151.77' y2='553.89'  stroke='#000000'/>
+<line x1='151.77' y1='553.89' x2='156.32' y2='547.39'  stroke='#000000'/>
+<line x1='227.64' y1='555.95' x2='232.19' y2='562.45'  stroke='#000000'/>
+<line x1='232.19' y1='562.45' x2='227.64' y2='568.95'  stroke='#000000'/>
+<line x1='227.64' y1='568.95' x2='223.09' y2='562.45'  stroke='#000000'/>
+<line x1='223.09' y1='562.45' x2='227.64' y2='555.95'  stroke='#000000'/>
+<line x1='306.55' y1='534.33' x2='311.10' y2='540.83'  stroke='#000000'/>
+<line x1='311.10' y1='540.83' x2='306.55' y2='547.33'  stroke='#000000'/>
+<line x1='306.55' y1='547.33' x2='302.00' y2='540.83'  stroke='#000000'/>
+<line x1='302.00' y1='540.83' x2='306.55' y2='534.33'  stroke='#000000'/>
+<line x1='382.14' y1='543.54' x2='386.69' y2='550.04'  stroke='#000000'/>
+<line x1='386.69' y1='550.04' x2='382.14' y2='556.54'  stroke='#000000'/>
+<line x1='382.14' y1='556.54' x2='377.59' y2='550.04'  stroke='#000000'/>
+<line x1='377.59' y1='550.04' x2='382.14' y2='543.54'  stroke='#000000'/>
+<line x1='456.98' y1='545.67' x2='461.53' y2='552.17'  stroke='#000000'/>
+<line x1='461.53' y1='552.17' x2='456.98' y2='558.67'  stroke='#000000'/>
+<line x1='456.98' y1='558.67' x2='452.43' y2='552.17'  stroke='#000000'/>
+<line x1='452.43' y1='552.17' x2='456.98' y2='545.67'  stroke='#000000'/>
+<line x1='535.89' y1='534.34' x2='540.44' y2='540.84'  stroke='#000000'/>
+<line x1='540.44' y1='540.84' x2='535.89' y2='547.34'  stroke='#000000'/>
+<line x1='535.89' y1='547.34' x2='531.34' y2='540.84'  stroke='#000000'/>
+<line x1='531.34' y1='540.84' x2='535.89' y2='534.34'  stroke='#000000'/>
+<line x1='609.79' y1='548.37' x2='614.34' y2='554.87'  stroke='#000000'/>
+<line x1='614.34' y1='554.87' x2='609.79' y2='561.37'  stroke='#000000'/>
+<line x1='609.79' y1='561.37' x2='605.24' y2='554.87'  stroke='#000000'/>
+<line x1='605.24' y1='554.87' x2='609.79' y2='548.37'  stroke='#000000'/>
+<line x1='682.65' y1='551.40' x2='687.20' y2='557.90'  stroke='#000000'/>
+<line x1='687.20' y1='557.90' x2='682.65' y2='564.40'  stroke='#000000'/>
+<line x1='682.65' y1='564.40' x2='678.10' y2='557.90'  stroke='#000000'/>
+<line x1='678.10' y1='557.90' x2='682.65' y2='551.40'  stroke='#000000'/>
+<line x1='754.75' y1='553.62' x2='759.30' y2='560.12'  stroke='#000000'/>
+<line x1='759.30' y1='560.12' x2='754.75' y2='566.62'  stroke='#000000'/>
+<line x1='754.75' y1='566.62' x2='750.20' y2='560.12'  stroke='#000000'/>
+<line x1='750.20' y1='560.12' x2='754.75' y2='553.62'  stroke='#000000'/>
+<line x1='831.20' y1='541.12' x2='835.75' y2='547.62'  stroke='#000000'/>
+<line x1='835.75' y1='547.62' x2='831.20' y2='554.12'  stroke='#000000'/>
+<line x1='831.20' y1='554.12' x2='826.65' y2='547.62'  stroke='#000000'/>
+<line x1='826.65' y1='547.62' x2='831.20' y2='541.12'  stroke='#000000'/>
+<line x1='905.56' y1='547.03' x2='910.11' y2='553.53'  stroke='#000000'/>
+<line x1='910.11' y1='553.53' x2='905.56' y2='560.03'  stroke='#000000'/>
+<line x1='905.56' y1='560.03' x2='901.01' y2='553.53'  stroke='#000000'/>
+<line x1='901.01' y1='553.53' x2='905.56' y2='547.03'  stroke='#000000'/>
+<line x1='971.95' y1='571.25' x2='976.50' y2='577.75'  stroke='#000000'/>
+<line x1='976.50' y1='577.75' x2='971.95' y2='584.25'  stroke='#000000'/>
+<line x1='971.95' y1='584.25' x2='967.40' y2='577.75'  stroke='#000000'/>
+<line x1='967.40' y1='577.75' x2='971.95' y2='571.25'  stroke='#000000'/>
+<line x1='1055.24' y1='522.79' x2='1059.79' y2='529.29'  stroke='#000000'/>
+<line x1='1059.79' y1='529.29' x2='1055.24' y2='535.79'  stroke='#000000'/>
+<line x1='1055.24' y1='535.79' x2='1050.69' y2='529.29'  stroke='#000000'/>
+<line x1='1050.69' y1='529.29' x2='1055.24' y2='522.79'  stroke='#000000'/>
+<polygon fill='#FFFFFF' points='926.32 754.06 1349.58 753.99 1349.53 879.37' shape-rendering='crispEdges' />
+<polygon fill='#FFFFFF' points='926.39 753.88 1349.59 879.19 926.34 879.26' shape-rendering='crispEdges' />
+<polygon fill='#FFFFFF' fill-opacity='0.78' points='194.37 779.90 559.60 779.84 559.55 879.36' shape-rendering='crispEdges' />
+<polygon fill='#FFFFFF' fill-opacity='0.78' points='194.43 779.73 559.61 879.19 194.39 879.25' shape-rendering='crispEdges' />
+<line x1='926.82' y1='879.12' x2='926.82' y2='754.13'  stroke='#A9A9A9'/>
+<line x1='926.82' y1='754.13' x2='1349.10' y2='754.13'  stroke='#A9A9A9'/>
+<line x1='1349.10' y1='754.13' x2='1349.10' y2='879.12'  stroke='#A9A9A9'/>
+<line x1='1349.10' y1='879.12' x2='926.82' y2='879.12'  stroke='#A9A9A9'/>
+<line x1='194.87' y1='879.12' x2='194.87' y2='779.97'  stroke='#A9A9A9'/>
+<line x1='194.87' y1='779.97' x2='559.11' y2='779.97'  stroke='#A9A9A9'/>
+<line x1='559.11' y1='779.97' x2='559.11' y2='879.12'  stroke='#A9A9A9'/>
+<line x1='559.11' y1='879.12' x2='194.87' y2='879.12'  stroke='#A9A9A9'/>
+<text x='1040.68' y='779.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics v7.4.56, no  Accelerator </text>
+<text x='1040.68' y='780.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics v7.4.56, no  Accelerator </text>
+<text x='1040.68' y='781.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics v7.4.56, no  Accelerator </text>
+<text x='1041.68' y='779.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics v7.4.56, no  Accelerator </text>
+<text x='1041.68' y='781.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics v7.4.56, no  Accelerator </text>
+<text x='1042.68' y='779.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics v7.4.56, no  Accelerator </text>
+<text x='1042.68' y='780.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics v7.4.56, no  Accelerator </text>
+<text x='1042.68' y='781.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics v7.4.56, no  Accelerator </text>
+<text x='1041.68' y='780.15' font-family='Linux Libertine' font-size='13.00pt'>ILNumerics v7.4.56, no  Accelerator </text>
+<text x='1040.68' y='800.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy </text>
+<text x='1040.68' y='801.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy </text>
+<text x='1040.68' y='802.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy </text>
+<text x='1041.68' y='800.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy </text>
+<text x='1041.68' y='802.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy </text>
+<text x='1042.68' y='800.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy </text>
+<text x='1042.68' y='801.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy </text>
+<text x='1042.68' y='802.15' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy </text>
+<text x='1041.68' y='801.15' font-family='Linux Libertine' font-size='13.00pt'>numpy </text>
+<text x='1040.68' y='821.14' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>FORTRAN /O3 optimization </text>
+<text x='1040.68' y='822.14' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>FORTRAN /O3 optimization </text>
+<text x='1040.68' y='823.14' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>FORTRAN /O3 optimization </text>
+<text x='1041.68' y='821.14' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>FORTRAN /O3 optimization </text>
+<text x='1041.68' y='823.14' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>FORTRAN /O3 optimization </text>
+<text x='1042.68' y='821.14' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>FORTRAN /O3 optimization </text>
+<text x='1042.68' y='822.14' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>FORTRAN /O3 optimization </text>
+<text x='1042.68' y='823.14' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>FORTRAN /O3 optimization </text>
+<text x='1041.68' y='822.14' font-family='Linux Libertine' font-size='13.00pt'>FORTRAN /O3 optimization </text>
+<text x='1040.68' y='842.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics Accelerator v7.4.56 </text>
+<text x='1040.68' y='843.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics Accelerator v7.4.56 </text>
+<text x='1040.68' y='844.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics Accelerator v7.4.56 </text>
+<text x='1041.68' y='842.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics Accelerator v7.4.56 </text>
+<text x='1041.68' y='844.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics Accelerator v7.4.56 </text>
+<text x='1042.68' y='842.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics Accelerator v7.4.56 </text>
+<text x='1042.68' y='843.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics Accelerator v7.4.56 </text>
+<text x='1042.68' y='844.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>ILNumerics Accelerator v7.4.56 </text>
+<text x='1041.68' y='843.13' font-family='Linux Libertine' font-size='13.00pt'>ILNumerics Accelerator v7.4.56 </text>
+<text x='1040.68' y='863.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy + viproc </text>
+<text x='1040.68' y='864.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy + viproc </text>
+<text x='1040.68' y='865.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy + viproc </text>
+<text x='1041.68' y='863.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy + viproc </text>
+<text x='1041.68' y='865.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy + viproc </text>
+<text x='1042.68' y='863.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy + viproc </text>
+<text x='1042.68' y='864.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy + viproc </text>
+<text x='1042.68' y='865.13' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>numpy + viproc </text>
+<text x='1041.68' y='864.13' font-family='Linux Libertine' font-size='13.00pt'>numpy + viproc </text>
+<text x='203.88' y='804.98' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>
+<tspan font-weight='bold' x='204.88px'>Execution speed: KMeans clustering</tspan>
+<tspan y='820.98px' x='203.88px'>    Data:  [1203,1203] double</tspan>
+<tspan y='836.98px' x='203.88px'>    </tspan>
+<tspan font-size='10.00pt' y='839.98px' x='223.88px'>System: Ubuntu 24.04.5 LTS: 10 GB RAM, 4  cores</tspan>
+<tspan font-size='10.00pt' y='855.98px' x='204.88px'>Intel(R) Xeon(R) Processor @ 2.80GHz</tspan></text>
+<text x='203.88' y='805.98' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>
+<tspan font-weight='bold' x='204.88px'>Execution speed: KMeans clustering</tspan>
+<tspan y='821.98px' x='203.88px'>    Data:  [1203,1203] double</tspan>
+<tspan y='837.98px' x='203.88px'>    </tspan>
+<tspan font-size='10.00pt' y='840.98px' x='223.88px'>System: Ubuntu 24.04.5 LTS: 10 GB RAM, 4  cores</tspan>
+<tspan font-size='10.00pt' y='856.98px' x='204.88px'>Intel(R) Xeon(R) Processor @ 2.80GHz</tspan></text>
+<text x='203.88' y='806.98' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>
+<tspan font-weight='bold' x='204.88px'>Execution speed: KMeans clustering</tspan>
+<tspan y='822.98px' x='203.88px'>    Data:  [1203,1203] double</tspan>
+<tspan y='838.98px' x='203.88px'>    </tspan>
+<tspan font-size='10.00pt' y='841.98px' x='223.88px'>System: Ubuntu 24.04.5 LTS: 10 GB RAM, 4  cores</tspan>
+<tspan font-size='10.00pt' y='857.98px' x='204.88px'>Intel(R) Xeon(R) Processor @ 2.80GHz</tspan></text>
+<text x='204.88' y='804.98' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>
+<tspan font-weight='bold' x='205.88px'>Execution speed: KMeans clustering</tspan>
+<tspan y='820.98px' x='204.88px'>    Data:  [1203,1203] double</tspan>
+<tspan y='836.98px' x='204.88px'>    </tspan>
+<tspan font-size='10.00pt' y='839.98px' x='224.88px'>System: Ubuntu 24.04.5 LTS: 10 GB RAM, 4  cores</tspan>
+<tspan font-size='10.00pt' y='855.98px' x='205.88px'>Intel(R) Xeon(R) Processor @ 2.80GHz</tspan></text>
+<text x='204.88' y='806.98' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>
+<tspan font-weight='bold' x='205.88px'>Execution speed: KMeans clustering</tspan>
+<tspan y='822.98px' x='204.88px'>    Data:  [1203,1203] double</tspan>
+<tspan y='838.98px' x='204.88px'>    </tspan>
+<tspan font-size='10.00pt' y='841.98px' x='224.88px'>System: Ubuntu 24.04.5 LTS: 10 GB RAM, 4  cores</tspan>
+<tspan font-size='10.00pt' y='857.98px' x='205.88px'>Intel(R) Xeon(R) Processor @ 2.80GHz</tspan></text>
+<text x='205.88' y='804.98' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>
+<tspan font-weight='bold' x='206.88px'>Execution speed: KMeans clustering</tspan>
+<tspan y='820.98px' x='205.88px'>    Data:  [1203,1203] double</tspan>
+<tspan y='836.98px' x='205.88px'>    </tspan>
+<tspan font-size='10.00pt' y='839.98px' x='225.88px'>System: Ubuntu 24.04.5 LTS: 10 GB RAM, 4  cores</tspan>
+<tspan font-size='10.00pt' y='855.98px' x='206.88px'>Intel(R) Xeon(R) Processor @ 2.80GHz</tspan></text>
+<text x='205.88' y='805.98' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>
+<tspan font-weight='bold' x='206.88px'>Execution speed: KMeans clustering</tspan>
+<tspan y='821.98px' x='205.88px'>    Data:  [1203,1203] double</tspan>
+<tspan y='837.98px' x='205.88px'>    </tspan>
+<tspan font-size='10.00pt' y='840.98px' x='225.88px'>System: Ubuntu 24.04.5 LTS: 10 GB RAM, 4  cores</tspan>
+<tspan font-size='10.00pt' y='856.98px' x='206.88px'>Intel(R) Xeon(R) Processor @ 2.80GHz</tspan></text>
+<text x='205.88' y='806.98' font-family='Linux Libertine' font-size='13.00pt' fill='#FFFFFF'>
+<tspan font-weight='bold' x='206.88px'>Execution speed: KMeans clustering</tspan>
+<tspan y='822.98px' x='205.88px'>    Data:  [1203,1203] double</tspan>
+<tspan y='838.98px' x='205.88px'>    </tspan>
+<tspan font-size='10.00pt' y='841.98px' x='225.88px'>System: Ubuntu 24.04.5 LTS: 10 GB RAM, 4  cores</tspan>
+<tspan font-size='10.00pt' y='857.98px' x='206.88px'>Intel(R) Xeon(R) Processor @ 2.80GHz</tspan></text>
+<text x='204.88' y='805.98' font-family='Linux Libertine' font-size='13.00pt'>
+<tspan font-weight='bold' x='205.88px'>Execution speed: KMeans clustering</tspan>
+<tspan y='821.98px' x='204.88px'>    Data:  [1203,1203] double</tspan>
+<tspan y='837.98px' x='204.88px'>    </tspan>
+<tspan font-size='10.00pt' y='840.98px' x='224.88px'>System: Ubuntu 24.04.5 LTS: 10 GB RAM, 4  cores</tspan>
+<tspan font-size='10.00pt' y='856.98px' x='205.88px'>Intel(R) Xeon(R) Processor @ 2.80GHz</tspan></text>
+<line x1='936.83' y1='774.64' x2='989.25' y2='774.64'  stroke-dasharray='2,2,2,2' stroke='#000000' stroke-width='3'/>
+<line x1='989.25' y1='774.64' x2='1015.47' y2='774.64'  stroke-dasharray='2,2,2,2' stroke-dashoffset='52.4283' stroke='#000000' stroke-width='3'/>
+<line x1='936.83' y1='795.63' x2='989.25' y2='795.63'  stroke='#008000' stroke-width='3'/>
+<line x1='989.25' y1='795.63' x2='1015.47' y2='795.63'  stroke='#008000' stroke-width='3'/>
+<line x1='936.83' y1='816.63' x2='989.25' y2='816.63'  stroke='#0000FF' stroke-width='3'/>
+<line x1='989.25' y1='816.63' x2='1015.47' y2='816.63'  stroke='#0000FF' stroke-width='3'/>
+<line x1='936.83' y1='837.62' x2='989.25' y2='837.62'  stroke='#FF0000' stroke-width='3'/>
+<line x1='989.25' y1='837.62' x2='1015.47' y2='837.62'  stroke='#FF0000' stroke-width='3'/>
+<line x1='936.83' y1='858.61' x2='989.25' y2='858.61'  stroke='#FF8C00' stroke-width='3'/>
+<line x1='989.25' y1='858.61' x2='1015.47' y2='858.61'  stroke='#FF8C00' stroke-width='3'/>
+<polygon fill='#A9A9A9' points='976.04 775.13 975.96 767.67 979.33 768.44' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.83 775.03 979.00 768.28 981.71 770.44' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.70 774.86 981.48 770.15 982.98 773.27' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.65 774.64 982.90 772.91 982.90 776.37' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.70 774.42 982.98 776.01 981.48 779.12' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.83 774.25 981.71 778.84 979.00 780.99' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.04 774.15 979.33 780.83 975.96 781.60' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.26 774.15 976.33 781.60 972.96 780.83' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.46 774.25 973.29 780.99 970.59 778.84' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.60 774.42 970.82 779.12 969.32 776.01' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.65 774.64 969.40 776.37 969.40 772.91' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.60 774.86 969.32 773.27 970.82 770.15' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.46 775.03 970.59 770.44 973.29 768.28' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.26 775.13 972.96 768.44 976.33 767.67' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.15 788.63 981.08 800.50 971.21 800.50' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.34 788.67 971.41 800.64 976.34 788.67' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='982.87 809.68 983.00 823.48 969.20 823.35' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='983.09 809.90 969.42 823.57 969.29 809.77' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='983.15 810.13 969.15 810.13 983.15 810.13' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.04 838.11 975.96 830.65 979.33 831.42' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.83 838.01 979.00 831.26 981.71 833.42' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.70 837.84 981.48 833.13 982.98 836.25' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.65 837.62 982.90 835.89 982.90 839.35' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.70 837.40 982.98 838.99 981.48 842.11' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.83 837.23 981.71 841.82 979.00 843.97' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.04 837.13 979.33 843.82 975.96 844.58' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.26 837.13 976.33 844.58 972.96 843.82' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.46 837.23 973.29 843.97 970.59 841.82' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.60 837.40 970.82 842.11 969.32 838.99' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.65 837.62 969.40 839.35 969.40 835.89' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.60 837.84 969.32 836.25 970.82 833.13' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.46 838.01 970.59 833.42 973.29 831.26' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.26 838.11 972.96 831.42 976.33 830.65' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.86 859.02 975.98 851.64 981.10 858.90' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='975.86 858.20 981.10 858.32 975.98 865.59' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.43 858.20 976.31 865.59 971.19 858.32' shape-rendering='crispEdges' />
+<polygon fill='#A9A9A9' points='976.43 859.02 971.19 858.90 976.31 851.64' shape-rendering='crispEdges' />
+<line x1='976.15' y1='768.14' x2='978.97' y2='768.78'  stroke='#000000'/>
+<line x1='978.97' y1='768.78' x2='981.23' y2='770.59'  stroke='#000000'/>
+<line x1='981.23' y1='770.59' x2='982.48' y2='773.19'  stroke='#000000'/>
+<line x1='982.48' y1='773.19' x2='982.48' y2='776.08'  stroke='#000000'/>
+<line x1='982.48' y1='776.08' x2='981.23' y2='778.69'  stroke='#000000'/>
+<line x1='981.23' y1='778.69' x2='978.97' y2='780.49'  stroke='#000000'/>
+<line x1='978.97' y1='780.49' x2='976.15' y2='781.14'  stroke='#000000'/>
+<line x1='976.15' y1='781.14' x2='973.33' y2='780.49'  stroke='#000000'/>
+<line x1='973.33' y1='780.49' x2='971.06' y2='778.69'  stroke='#000000'/>
+<line x1='971.06' y1='778.69' x2='969.81' y2='776.08'  stroke='#000000'/>
+<line x1='969.81' y1='776.08' x2='969.81' y2='773.19'  stroke='#000000'/>
+<line x1='969.81' y1='773.19' x2='971.06' y2='770.59'  stroke='#000000'/>
+<line x1='971.06' y1='770.59' x2='973.33' y2='768.78'  stroke='#000000'/>
+<line x1='973.33' y1='768.78' x2='976.15' y2='768.14'  stroke='#000000'/>
+<line x1='976.15' y1='768.14' x2='976.15' y2='768.14'  stroke='#000000'/>
+<line x1='976.15' y1='789.13' x2='980.70' y2='800.18'  stroke='#000000'/>
+<line x1='980.70' y1='800.18' x2='971.60' y2='800.18'  stroke='#000000'/>
+<line x1='971.60' y1='800.18' x2='976.15' y2='789.13'  stroke='#000000'/>
+<line x1='982.65' y1='810.13' x2='982.65' y2='823.13'  stroke='#000000'/>
+<line x1='982.65' y1='823.13' x2='969.65' y2='823.13'  stroke='#000000'/>
+<line x1='969.65' y1='823.13' x2='969.65' y2='810.13'  stroke='#000000'/>
+<line x1='969.65' y1='810.13' x2='982.65' y2='810.13'  stroke='#000000'/>
+<line x1='976.15' y1='831.12' x2='978.97' y2='831.76'  stroke='#000000'/>
+<line x1='978.97' y1='831.76' x2='981.23' y2='833.57'  stroke='#000000'/>
+<line x1='981.23' y1='833.57' x2='982.48' y2='836.17'  stroke='#000000'/>
+<line x1='982.48' y1='836.17' x2='982.48' y2='839.07'  stroke='#000000'/>
+<line x1='982.48' y1='839.07' x2='981.23' y2='841.67'  stroke='#000000'/>
+<line x1='981.23' y1='841.67' x2='978.97' y2='843.48'  stroke='#000000'/>
+<line x1='978.97' y1='843.48' x2='976.15' y2='844.12'  stroke='#000000'/>
+<line x1='976.15' y1='844.12' x2='973.33' y2='843.48'  stroke='#000000'/>
+<line x1='973.33' y1='843.48' x2='971.06' y2='841.67'  stroke='#000000'/>
+<line x1='971.06' y1='841.67' x2='969.81' y2='839.07'  stroke='#000000'/>
+<line x1='969.81' y1='839.07' x2='969.81' y2='836.17'  stroke='#000000'/>
+<line x1='969.81' y1='836.17' x2='971.06' y2='833.57'  stroke='#000000'/>
+<line x1='971.06' y1='833.57' x2='973.33' y2='831.76'  stroke='#000000'/>
+<line x1='973.33' y1='831.76' x2='976.15' y2='831.12'  stroke='#000000'/>
+<line x1='976.15' y1='831.12' x2='976.15' y2='831.12'  stroke='#000000'/>
+<line x1='976.15' y1='852.11' x2='980.70' y2='858.61'  stroke='#000000'/>
+<line x1='980.70' y1='858.61' x2='976.15' y2='865.11'  stroke='#000000'/>
+<line x1='976.15' y1='865.11' x2='971.60' y2='858.61'  stroke='#000000'/>
+<line x1='971.60' y1='858.61' x2='976.15' y2='852.11'  stroke='#000000'/></svg>

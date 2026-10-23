@@ -30,13 +30,18 @@ def kmeans(X,k):
 
 def measure_numpy():
     if len(sys.argv) < 5:
-        raise ValueError("Invalid arguments. Required: working_dir K measID rep maxsec append.csv ")
+        raise ValueError("Invalid arguments. Required: working_dir K measID rep maxsec append.csv [warmupsec]")
 
     array = loadtxt(os.path.join(sys.argv[1], 'input.csv'), delimiter=',', dtype=float64)
     k = int(sys.argv[2])
     measID = int(sys.argv[3])
     rep = int(sys.argv[4])
     maxsec = int(sys.argv[5])
+    warmup = float(sys.argv[7]) if len(sys.argv) > 7 else 0.0
+    # warm-up: not recorded; the elapsed time of the samples starts after it
+    start = tm.perf_counter()
+    while tm.perf_counter() - start < warmup:
+        kmeans(array, k)
     with open(os.path.join(sys.argv[1], sys.argv[6]), "a") as outfile:
         wall = tm.perf_counter()
         while tm.perf_counter() - wall < maxsec: 
