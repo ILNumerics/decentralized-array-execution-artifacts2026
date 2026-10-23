@@ -22,7 +22,7 @@ with `A = arange(0, n) * flip(arange(0, n)).T` (the input of the article) in fou
 
 ## Results
 
-4 CPUs (Intel Xeon @ 2.80 GHz, Linux VM), CPython 3.13, NumPy 2.5.4, SciPy 1.18.1, viproc 0.1.0 ([PR #36](https://github.com/hokb/viproc/pull/36)). Time per expression `abs(ifft(fft(A)))`, the best of 5 runs of 100 iterations (20 for n = 2000):
+4 CPUs (Intel Xeon @ 2.80 GHz, Linux VM), CPython 3.13, NumPy 2.5.4, SciPy 1.18.1, viproc 0.1.0 (commit [75715d2](https://github.com/hokb/viproc/commit/75715d2747f8d5f05e5a2a475ae2ed2cc79b22b9), asynchronous `numpy.fft` since [PR #36](https://github.com/hokb/viproc/pull/36)). Time per expression `abs(ifft(fft(A)))`, the best of 5 runs of 100 iterations (20 for n = 2000):
 
 ![Part4.svg](Part4.svg)
 
@@ -42,7 +42,7 @@ Speed-ups in parentheses are against plain NumPy. Bit-identical to NumPy: numpy 
 
 ## Running the Benchmark using Docker (recommended)
 
-The image installs NumPy, SciPy, matplotlib and builds viproc from source (`pip install git+https://github.com/hokb/viproc`). The viproc version is the build argument `VIPROC_REF` (default: the commit of PR #36, which runs `numpy.fft` asynchronously).
+The image installs NumPy, SciPy, matplotlib and builds viproc from source (`pip install git+https://github.com/hokb/viproc`). The viproc version is the build argument `VIPROC_REF` (default: `main`; `--build-arg VIPROC_REF=75715d2747f8d5f05e5a2a475ae2ed2cc79b22b9` gives the version measured above).
 
 ### ... on Windows
 ```PowerShell
@@ -59,7 +59,7 @@ ps> .\run-docker.ps1
 Requires CPython >= 3.12 and a C/C++ compiler (GCC, Clang or MSVC) for viproc:
 
 ```bash
-pip install "numpy>=2.5" scipy matplotlib "viproc @ git+https://github.com/hokb/viproc@75715d2747f8d5f05e5a2a475ae2ed2cc79b22b9"
+pip install "numpy>=2.5" scipy matplotlib "viproc @ git+https://github.com/hokb/viproc"
 python fft_benchmark.py                        # sizes 100 200 500 1000 2000
 python fft_benchmark.py --sizes 300 3000 --repeat 3
 ```
