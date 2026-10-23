@@ -298,7 +298,7 @@ void draw() {
             new LinePlot(series(3), tag: "FORTRAN /O3 optimization ", lineWidth: 3, markerStyle: MarkerStyle.Square, lineColor: Color.Blue, lineStyle: DashStyle.Solid),
             new LinePlot(series(1), tag: $"ILNumerics Accelerator v{ILNVersStr} ", lineWidth: 3, markerStyle: MarkerStyle.Dot, lineColor: Color.Red, lineStyle: DashStyle.Solid),
             new Legend() {
-                Location = new PointF(.9f, .46f), Anchor = new PointF(1, .5f)
+                Location = new PointF(.9f, .88f), Anchor = new PointF(1, 1)   // bottom right, below the data
             }
         }
     };
@@ -319,9 +319,7 @@ void draw() {
     // configure Y axis
     pc.ScaleModes.YAxisScale = AxisScale.Logarithmic;
     pc.Axes.YAxis.Label.Text = "Exec time [ms]";
-    pc.Axes.YAxis.LabelPosition = new Vector3(.63, .3, 0);
-    pc.Axes.YAxis.LabelAnchor = new PointF(.5f, 1f);
-    pc.Axes.YAxis.LabelRotation = pif / 2f * 3;
+    // label at its default position, clear of the tick labels
 
     // increase markers size
     foreach (var lineplot in pc.Find<LinePlot>()) {
@@ -332,14 +330,12 @@ void draw() {
     @$"\bfExecution speed: KMeans clustering\reset
     Data:  [{dataMatLen},{dataMatLen}] double
     \fontsize{{-3}}System: {getSystemInfo()}"));
-    title.Location = new PointF(.13f, .46f);
-    title.Anchor = new PointF(0, 0.5f);
-    // y limits (log10 units): extend to the next decades below and above the data, so that the logarithmic
-    // axis has a labeled tick at each end and not only one label in the middle
+    title.Location = new PointF(.13f, .88f);   // bottom left, below the data
+    title.Anchor = new PointF(0, 1);
+    // y limits (log10 units): extend down to the next decade below the data, so that the logarithmic axis
+    // has a labeled tick at its lower end, not only one label in the middle; the upper end fits the data
     var yLogMin = (float)Math.Floor(Math.Log10((double)minall(times[full, 2])));
-    var yLogMax = (float)Math.Ceiling(Math.Log10((double)maxall(times[full, 2])));
     pc.Limits.Update(new Vector3(0, yLogMin, 0), 2);
-    pc.Limits.Update(new Vector3(0, yLogMax, 0), 2);
 
     var pbILabel = scene.First<Label>(predicate: l => l.Text.Length > 20);
     pbILabel.Position = new Vector3(0.9, 0.88, 0);
