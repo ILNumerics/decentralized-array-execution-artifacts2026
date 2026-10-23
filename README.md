@@ -2,6 +2,8 @@
 This repository collects performance benchmarks for the [ILNumerics Accelerator JIT compiler](https://ilnumerics.net/ilnumerics-accelerator-compiler.html). This compiler is the driving force behind high-performance numerical array code optimizations for the [ILNumerics](https://ilnumerics.net) numerical application development platform on .NET.
 The [initial state of the repository](https://github.com/hokb/decentralized-array-execution-artifacts2026/tree/paper2026) (May 2026) represents artifacts for the 2026 paper ["A Virtual Processor brings back the Free Lunch"](http://arxiv.org/abs/2605.30507) published by [ILNumerics GmbH](https://ilnumerics.net), using ILNumerics version 7.4. It is subsequently extended with more and updated benchmarks as ILNumerics Accelerator evolves. 
 
+Since [Part 4](Appendix/Part%204%20FFT), the comparisons include Python: [viproc](https://github.com/hokb/viproc) brings the execution model of ILNumerics Accelerator (array instruction level parallelism) to regular NumPy programs.
+
 Each benchmark can be downloaded and reproduced locally. Docker images / build scripts are provided where suitable. 
 
 ## Content
@@ -44,6 +46,16 @@ Demonstrates strong-scaling capabilities by [ILNumerics Accelerator (.NET)](http
 </td>
     <td width="45%" valign="top" style="border:dashed brown 2px">
 <img src="https://raw.githubusercontent.com/hokb/decentralized-array-execution-artifacts2026/refs/heads/main/Appendix/Part%203%20KMeans/Part3.svg" alt="Array expression performance on NumPy, FORTRAN and ILNumerics" width="100%">
+</td>
+  </tr>
+  <tr>
+    <td width="55%" valign="top">
+
+### [Part 4 - Faster FFT in Python: NumPy, scipy.fft and viproc](Appendix/Part%204%20FFT)
+The [Faster FFT](https://ilnumerics.net/Faster-Fast-Fourier-Transform.html) program `abs(ifft(fft(A)))` in Python: plain NumPy vs. `scipy.fft` (parallel inside each FFT, `workers=-1`) vs. [viproc](https://github.com/hokb/viproc), which brings the AILP execution model of ILNumerics Accelerator to unchanged NumPy programs. viproc: 2.2x-6.4x over NumPy on 4 cores, bit-identical to NumPy; `scipy.fft`: 0.5x-2.6x.
+</td>
+    <td width="45%" valign="top" style="border:dashed brown 2px">
+<img src="Appendix/Part%204%20FFT/Part4.svg" alt="FFT performance of NumPy, scipy.fft and viproc" width="100%">
 </td>
   </tr>
 </table>
