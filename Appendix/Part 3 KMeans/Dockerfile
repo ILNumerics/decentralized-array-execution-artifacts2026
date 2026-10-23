@@ -6,6 +6,9 @@ COPY FORTRAN/*.* ./FORTRAN/
 
 COPY numpy ./numpy/
 COPY ILNumerics/*.* ./ILNumerics/
+# runtime license file for builds on unlicensed seats (Docker), generated on a licensed seat per target framework:
+# ILNumerics_deploy/<tfm>/ilnumerics.lic. Without a valid one the program runs under 'Starter' plan restrictions.
+COPY ILNumerics/ILNumerics_deploy/ ./ILNumerics/ILNumerics_deploy/
 
 WORKDIR /Artefact3/ILNumerics
 
