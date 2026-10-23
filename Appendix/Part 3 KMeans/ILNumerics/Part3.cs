@@ -22,7 +22,8 @@ using static ILNumerics.ILMath;
 
 var exeDir = Path.GetDirectoryName(typeof(Part3_noopt).Assembly.Location);
 string OutputFolder = Path.GetFullPath(Path.Combine(exeDir, "..", "..", "..", "..", "result"));  // expected standard output file structure: ILNumerics/bin/Release/net8.0/Part3.dll
-const int MeasureTimeSpanSeconds = 15;
+const int MeasureTimeSpanSeconds = 20;
+const int WarmupSeconds = 2;  // each technology runs this long before its measurement starts (JIT, caches, pools)
 const int MeasureRepetitions = 3;
 const string MainMeasurementTimesFileName = "values.csv";  // format: MeasurementID (int), SampleReadTime (double), SampleValue (double)
 var outValuesPathNq = r2aPQ(Path.Combine(OutputFolder, MainMeasurementTimesFileName), quote: false);
@@ -103,6 +104,7 @@ unsafe void performMeasurements(string filename) {
     cmdargs += $"50 2 ";                                              // k  measurementID
     cmdargs += $"{MeasureRepetitions} {MeasureTimeSpanSeconds} ";  // rep maxsec
     cmdargs += r2aPQ(filename, true);                                 // filename to write measured times (out/ append)
+    cmdargs += $"{WarmupSeconds} ";                                   // warm-up seconds
 
     checkClasses.a = -1; checkIterations = -1;
     measureCmd(2.0, A, pythonExeName, sourcefile + " " + cmdargs, checkClasses, out checkIterations);
@@ -110,7 +112,7 @@ unsafe void performMeasurements(string filename) {
 
     // measure viproc: the same, unchanged NumPy script, run by 'python -m viproc' (https://github.com/hokb/viproc).
     // viproc executes the NumPy program's array instructions in parallel where their data dependencies allow it.
-    var viprocArgs = r2aPQ(OutputFolder, true) + $"50 4 {MeasureRepetitions} {MeasureTimeSpanSeconds} " + r2aPQ(filename, true);
+    var viprocArgs = r2aPQ(OutputFolder, true) + $"50 4 {MeasureRepetitions} {MeasureTimeSpanSeconds} " + r2aPQ(filename, true) + $"{WarmupSeconds} ";
     checkClasses.a = -1; checkIterations = -1;
     measureCmd(4.0, A, pythonExeName, "-m viproc " + sourcefile + " " + viprocArgs, checkClasses, out checkIterations);
     if ((bool)anyall(classes != checkClasses) || iterations != checkIterations) throw new ArgumentException("Measurement error: viproc yields invalid values.");
@@ -240,6 +242,10 @@ void measureCmd(double measureID, InArray<double> X, string cmd, string cmd_args
 void measureAction(string filename, Action action, double measureID, ref int iterations, int rep = 5) {
     var sw = new Stopwatch();
 
+    // warm-up: not recorded; the elapsed time of the samples starts after it
+    for (var warmup = DateTime.Now; DateTime.Now < warmup + TimeSpan.FromSeconds(WarmupSeconds);) {
+        action();
+    }
     for (var start = DateTime.Now; DateTime.Now < start + TimeSpan.FromSeconds(MeasureTimeSpanSeconds);) {
         sw.Restart();
         for (int i = 0; i < rep; i++) {
@@ -269,6 +275,14 @@ static string GetLinuxProcessorName() {
         ?? "Unknown CPU";
 }
 
+// the samples of one measurement for a line plot: [elapsed time in s; exec time in ms]
+RetArray<float> series(double measureID) {
+    using var _ = Scope.Enter();
+    Array<float> s = tosingle(times[times[full, 0] == measureID, "1,2"]);
+    s[full, 0] = s[full, 0] / 1000f;   // ms -> s
+    return s.T;
+}
+
 void draw() {
     Console.WriteLine("Generating plots."); 
     // increase the font size for plotting
@@ -279,10 +293,10 @@ void draw() {
 
     var scene = new Scene {
         new PlotCube(twoDMode: true) {
-            new LinePlot(tosingle(times[times[full, 0] == 0, "1,2"]).T, tag: $"ILNumerics v{ILNVersStr}, no  Accelerator ", lineWidth: 3, markerStyle: MarkerStyle.Dot, lineColor: Color.Black, lineStyle: DashStyle.Dashed),
-            new LinePlot(tosingle(times[times[full, 0] == 2, "1,2"]).T, tag: "numpy ", lineWidth: 3, markerStyle: MarkerStyle.TriangleUp, lineColor: Color.Green, lineStyle: DashStyle.Solid),
-            new LinePlot(tosingle(times[times[full, 0] == 3, "1,2"]).T, tag: "FORTRAN /O3 optimization ", lineWidth: 3, markerStyle: MarkerStyle.Square, lineColor: Color.Blue, lineStyle: DashStyle.Solid),
-            new LinePlot(tosingle(times[times[full, 0] == 1, "1,2"]).T, tag: $"ILNumerics Accelerator v{ILNVersStr} ", lineWidth: 3, markerStyle: MarkerStyle.Dot, lineColor: Color.Red, lineStyle: DashStyle.Solid),
+            new LinePlot(series(0), tag: $"ILNumerics v{ILNVersStr}, no  Accelerator ", lineWidth: 3, markerStyle: MarkerStyle.Dot, lineColor: Color.Black, lineStyle: DashStyle.Dashed),
+            new LinePlot(series(2), tag: "numpy ", lineWidth: 3, markerStyle: MarkerStyle.TriangleUp, lineColor: Color.Green, lineStyle: DashStyle.Solid),
+            new LinePlot(series(3), tag: "FORTRAN /O3 optimization ", lineWidth: 3, markerStyle: MarkerStyle.Square, lineColor: Color.Blue, lineStyle: DashStyle.Solid),
+            new LinePlot(series(1), tag: $"ILNumerics Accelerator v{ILNVersStr} ", lineWidth: 3, markerStyle: MarkerStyle.Dot, lineColor: Color.Red, lineStyle: DashStyle.Solid),
             new Legend() {
                 Location = new PointF(.9f, .46f), Anchor = new PointF(1, .5f)
             }
@@ -290,7 +304,7 @@ void draw() {
     };
     var pc = scene.First<PlotCube>();
     if ((bool)any(times[full, 0] == 4)) {   // viproc line (absent in measurements made before it was added)
-        pc.Add(new LinePlot(tosingle(times[times[full, 0] == 4, "1,2"]).T, tag: "numpy + viproc ", lineWidth: 3, markerStyle: MarkerStyle.Diamond, lineColor: Color.DarkOrange, lineStyle: DashStyle.Solid));
+        pc.Add(new LinePlot(series(4), tag: "numpy + viproc ", lineWidth: 3, markerStyle: MarkerStyle.Diamond, lineColor: Color.DarkOrange, lineStyle: DashStyle.Solid));
     }
 
     // set all fonts
@@ -300,19 +314,7 @@ void draw() {
     pc.Axes.YAxis.Ticks.DefaultLabel.Font = allLabelFonts;
 
     // configure X axis
-    pc.Axes.XAxis.Label.Text = "Elapsed time [s]";
-    pc.Axes.XAxis.LabelPosition = new Vector3(.5, .9, 0);
-    pc.Axes.XAxis.LabelAnchor = new PointF(.5f, 1f);
-    pc.Axes.XAxis.Ticks.Clear();
-    pc.Axes.XAxis.Ticks.DefaultLabel.Anchor = new PointF(.5f, 0f);
-
-    var minSec = (int)(minall(times[full, 1]) / 1000);
-    var maxSec = (int)(maxall(times[full, 1]) / 1000);
-    pc.Axes.XAxis.Ticks.Mode = TickMode.Manual;
-    for (var i = minSec; i <= maxSec + 1; i++) {
-        var ltext = (i < 7 || i > 10) ? i.ToString() : "";
-        pc.Axes.XAxis.Ticks.Add(i * 1000, ltext);
-    }
+    pc.Axes.XAxis.Label.Text = "Elapsed time [s]";   // automatic ticks, label at its default position
 
     // configure Y axis
     pc.ScaleModes.YAxisScale = AxisScale.Logarithmic;

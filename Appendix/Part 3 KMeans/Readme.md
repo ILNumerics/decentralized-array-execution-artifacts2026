@@ -12,13 +12,13 @@ when executed by:
 This benchmark uses the iterative k-means clustering algorithm for demonstrating the ability of ILNumerics Accelerator to speed-up even such algorithms, which spend most of their calculation time inside *order dependent loops*. Where traditional parallelization fails ILNumerics Accelerator is able to turn fine grained parallel potential into speed-up, gained on multiple computing devices. Here, Array Instruction Level Parallelizm (AILP) accelerates the iterative algorithm beyond FORTRAN speed by a **factor of 3x**. The benchmark produces a plot, similar to the following: 
 ![Part3.svg](Part3.svg)  
 Each technology (NumPy, FORTRAN, ILNumerics) was provided with identical input data of size [1203x1203] and start configuration to ensure identical iteration count. Results were identity checked.
-Each sample in the plot gives the time needed for computing the k-means clusters until convergence (here: 5 iterations). This 'current execution speed' is plotted for the first 15 seconds of the experiment and repeated for all execution technologies investigated. 
+Each sample in the plot gives the time needed for computing the k-means clusters until convergence (here: 5 iterations). This 'current execution speed' is plotted for 20 seconds, after a warm-up of 2 seconds, and repeated for all execution technologies investigated (the paper's figure shows the first 15 seconds, without warm-up). 
 
 Observed execution times for all experiments over the app's running time allow to compare not only the general efficiency of the individual optimization methods. It also allow to inspect the behavior of the method during start-up and in a steady run.
 
 ## Benchmark Structure
 All benchmarks are handled from `ILNumerics\Part3.csproj`. At runtime it starts the NumPy script, starts the FORTRAN executable, and starts the ILNumerics .NET benchmarks. 
-Each experiment is measured and repeated for 15 sec. Times needed for each completed iteration are written to csv files. 
+Each experiment first runs for 2 sec of warm-up (not recorded), then it is measured and repeated for 20 sec. Times needed for each completed iteration are written to csv files. 
 Afterwards, the plot corresponding to Figure 7 in the paper is generated using measured results. The paper publishes plots produced on Windows. Here, we present plots created on a Debian based Docker container - differences are discussed below. 
 
 ## Clone the repository (all benchmarks)
@@ -75,15 +75,15 @@ Re-Running the project will only re-create the plot. To trigger a new *measureme
 
 `Part3.cs` measures it as measurement ID 4 (orange line, "numpy + viproc"), with the same Python and NumPy as the NumPy measurement. The Docker image installs viproc when it is built. When running from code, `Part3.cs` installs it from GitHub before the first measurement if the Python cannot import it: into that Python with pip, or, where that is not possible (an externally managed system Python, no write access), into a virtual environment `.viproc-venv` next to `result`, whose Python then runs both the NumPy and the viproc measurement. viproc is built from source and needs Python >= 3.12 with its headers (Debian/Ubuntu: `python3-dev`, `python3-venv`), a C/C++ compiler and internet access; NumPy >= 2.5 is installed with it. If the installation fails, the program stops with a message before measuring. Environment variables: `PART3_PYTHON` selects the Python executable, `VIPROC_PIP_SPEC` what pip installs (default: the `main` branch of https://github.com/hokb/viproc).
 
-Measurement with viproc, `result_archive_viproc/` (Ubuntu 24.04 VM, Intel Xeon @ 2.80 GHz, 4 cores, 10 GB RAM; Python 3.13, NumPy 2.5.3; run from code, not in Docker), median time per k-means run (5 iterations):
+Measurement with viproc, `result_archive_viproc/` (Ubuntu 24.04 VM, Intel Xeon @ 2.80 GHz, 4 cores, 10 GB RAM; Python 3.12, NumPy 2.5.4, viproc installed by `Part3.cs` into `.viproc-venv`; run from code, not in Docker; 2 s warm-up, 20 s measurement per technology), median time per k-means run (5 iterations), each sample averaged over 3 runs:
 
 | technology | median [ms] | min [ms] |
 |---|---:|---:|
-| NumPy | 4720 | 4534 |
-| ILNumerics, no Accelerator | 2529 | 2082 |
-| FORTRAN /O3 | 769 | 728 |
-| numpy + viproc | 545 | 494 |
-| ILNumerics Accelerator | 471 | 387 |
+| NumPy | 3668 | 3573 |
+| ILNumerics, no Accelerator | 2110 | 2004 |
+| FORTRAN /O3 | 789 | 743 |
+| numpy + viproc | 511 | 457 |
+| ILNumerics Accelerator | 250 | 223 |
 
 ![Part3 with viproc](result_archive_viproc/Part3.svg)
 
@@ -91,7 +91,8 @@ Notes on this run:
 * The NumPy time on this VM is dominated by page faults: each temporary of `X[:,i,newaxis] - centers` (481 KB) is `mmap`ed and unmapped by glibc's allocator, and page faults are expensive in this virtual machine (with `MALLOC_MMAP_THRESHOLD_=100000000` one distance step takes 220 instead of 610 µs). viproc reuses element memory from its own pool and avoids them. Compare viproc rather with FORTRAN and ILNumerics here, or rerun on hardware with cheaper page faults (the Windows i7-12700K measurement in `result_archive/`: NumPy 599 ms).
 * ILNumerics ran under its 'Starter' plan conditions (no license embedded in this build).
 * 4 cores only; the Accelerator results in `result_archive/` were measured on 12 cores.
-* The VM varies between runs: a second run on the same VM (Python 3.12, NumPy 2.5.4, viproc installed by `Part3.cs` into `.viproc-venv`) gave medians of NumPy 3562, ILNumerics no Accelerator 1926, FORTRAN 779, numpy + viproc 555 and ILNumerics Accelerator 257 ms.
+* The VM varies between runs: an earlier run on the same VM gave medians of NumPy 4720, ILNumerics no Accelerator 2529, FORTRAN 769, numpy + viproc 545 and ILNumerics Accelerator 471 ms.
+* The ILNumerics Accelerator needs longer than the 2 s warm-up to reach its steady speed here (its first samples, until ~7 s, are slower); the medians above include them.
 
 ## Discussion
 ILNumerics Accelerator uses parallel potential on array instruction level and on sub-array instruction level (AILP). It enables to run multiple array instructions concurrently using multiple devices (as: individual cores of the CPU) and also to compress array instruction execution start times in the time domain by starting subsequent instructions as soon as the required *sub-part* of its input data is available. For example: the size of an input A is enough to start computing the size of the output of the function: `sin(A)`. 
