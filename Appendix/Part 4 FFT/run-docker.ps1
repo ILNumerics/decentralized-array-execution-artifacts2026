@@ -1,26 +1,29 @@
+param(
+    # rebuild the image even if it exists already (after changes to sources, Dockerfile or VIPROC_REF)
+    [switch]$Rebuild
+)
+
 $ErrorActionPreference = "Stop"
 
-$timestamp = Get-Date -Format "yyyy-MM-dd_HHmmss"
-$imageName = "artefact4:$timestamp"
-$containerName = "artefact4-$timestamp"
+$imageName = "artefact4:latest"
 $outDir = Join-Path (Get-Location).Path "result"
 
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 
-try {
+# the image is kept between runs: build only on request or if it does not exist yet
+if ($Rebuild -or -not (docker images -q $imageName)) {
     Write-Host "Building Docker image: $imageName"
     docker build -t $imageName .
-
-    Write-Host "Running container: $containerName"
-    docker run --name $containerName `
-        -v "${outDir}:/Artefact4/result" `
-        $imageName
+    if ($LASTEXITCODE -ne 0) { throw "docker build failed" }
 }
-finally {
-    Write-Host "Cleaning up container and image..."
-
-    docker rm -f $containerName 2>$null
-    docker rmi -f $imageName 2>$null
-
-    Write-Host "Done. Output files are in: $outDir"
+else {
+    Write-Host "Using existing Docker image: $imageName (use -Rebuild to build it again)"
 }
+
+Write-Host "Running container from: $imageName"
+docker run --rm `
+    -v "${outDir}:/Artefact4/result" `
+    $imageName
+if ($LASTEXITCODE -ne 0) { throw "docker run failed" }
+
+Write-Host "Done. Output files are in: $outDir"

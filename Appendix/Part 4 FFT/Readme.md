@@ -54,6 +54,8 @@ ps> .\run-docker.ps1
 > ./run-docker.sh
 ```
 
+The image (`artefact4:latest`) is built on the first run and kept afterwards: subsequent runs start a new container from the existing image. To build the image again (after changes to the sources, the Dockerfile or `VIPROC_REF`), use `.\run-docker.ps1 -Rebuild` or `./run-docker.sh --rebuild`. Remove the image with `docker rmi artefact4:latest`.
+
 ## Running the Benchmark from Code
 
 Requires CPython >= 3.12 and a C/C++ compiler (GCC, Clang or MSVC) for viproc:
