@@ -38,7 +38,7 @@ Speed-ups in parentheses are against plain NumPy. Bit-identical to NumPy: numpy 
 
 * **viproc** reaches 2.2x already at 100 x 100 and about 4.5x (the number of cores) from 200 x 200 on, with results identical to NumPy and without a change to the program.
 * **scipy.fft with all workers** is slower than NumPy for small arrays: splitting a small FFT costs more than it saves. It gains from 500 x 500 on and reaches 2.6x at 2000 x 2000, where each call has enough work for all cores.
-* The gap closes for large arrays, where one call alone fills the cores. This matches the observation of the ILNumerics article: overlapping whole array instructions (AILP) brings more than parallelizing inside each one, and most for small and medium sizes.
+* The gap shrinks for large arrays, where one call alone fills the cores. However, a synchronization after each completed FFT remains, which still slows down the main thread. This matches the observation of the ILNumerics article: overlapping whole array instructions (AILP) brings more than parallelizing inside each one, and most for small and medium sizes.
 
 ## Running the Benchmark using Docker (recommended)
 
