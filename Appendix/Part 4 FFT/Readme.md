@@ -44,7 +44,7 @@ Speed-ups in parentheses are against plain NumPy. Bit-identical to NumPy: numpy 
 
 The image installs NumPy, SciPy, matplotlib and builds viproc from source (`pip install git+https://github.com/hokb/viproc`). The viproc version is the build argument `VIPROC_REF` (default: `main`; `--build-arg VIPROC_REF=75715d2747f8d5f05e5a2a475ae2ed2cc79b22b9` gives the version measured above).
 
-### ... on Windows
+### ... on Windows (Docker Desktop running, using PowerShell)
 ```PowerShell
 ps> .\run-docker.ps1
 ```
